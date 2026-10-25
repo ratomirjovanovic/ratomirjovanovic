@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="230" viewBox="0 0 840 230" role="img" aria-labelledby="t d">
   <title id="t">Public GitHub activity and PandaPayLens project facts</title>
-  <desc id="d">Public contributions in the last 12 months: commits 69, pull requests 17, issues 7, code reviews 0. PandaPayLens: payment providers 22 / 42, latest release v0.3.0, releases 3, good first issues 6.</desc>
+  <desc id="d">Public contributions in the last 12 months: commits 83, pull requests 25, issues 13, code reviews 6. PandaPayLens: payment providers 26 / 42, latest release v0.4.0, releases 4, good first issues 6.</desc>
   <rect x="0.5" y="0.5" width="839" height="229" rx="12" fill="#0d1117" stroke="#30363d"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif">
     <text x="32" y="44" fill="#e6edf3" font-size="15" font-weight="600">Public activity, last 12 months</text>
@@ -8,26 +8,26 @@
     <line x1="430" y1="28" x2="430" y2="202" stroke="#30363d"/>
     <text x="32" y="82" fill="#8b949e" font-size="13">Commits</text>
     <rect x="140" y="72" width="220" height="8" rx="4" fill="#21262d"/>
-    <rect x="140" y="72" width="163" height="8" rx="4" fill="#3fb950"/>
-    <text x="398" y="82" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">69</text>
+    <rect x="140" y="72" width="144" height="8" rx="4" fill="#3fb950"/>
+    <text x="398" y="82" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">83</text>
     <text x="32" y="116" fill="#8b949e" font-size="13">Pull requests</text>
     <rect x="140" y="106" width="220" height="8" rx="4" fill="#21262d"/>
-    <rect x="140" y="106" width="40" height="8" rx="4" fill="#3fb950"/>
-    <text x="398" y="116" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">17</text>
+    <rect x="140" y="106" width="43" height="8" rx="4" fill="#3fb950"/>
+    <text x="398" y="116" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">25</text>
     <text x="32" y="150" fill="#8b949e" font-size="13">Issues</text>
     <rect x="140" y="140" width="220" height="8" rx="4" fill="#21262d"/>
-    <rect x="140" y="140" width="17" height="8" rx="4" fill="#3fb950"/>
-    <text x="398" y="150" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">7</text>
+    <rect x="140" y="140" width="23" height="8" rx="4" fill="#3fb950"/>
+    <text x="398" y="150" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">13</text>
     <text x="32" y="184" fill="#8b949e" font-size="13">Code reviews</text>
     <rect x="140" y="174" width="220" height="8" rx="4" fill="#21262d"/>
-    
-    <text x="398" y="184" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">0</text>
+    <rect x="140" y="174" width="10" height="8" rx="4" fill="#3fb950"/>
+    <text x="398" y="184" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">6</text>
     <text x="462" y="82" fill="#8b949e" font-size="13">Payment providers</text>
-    <text x="808" y="82" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">22 / 42</text>
+    <text x="808" y="82" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">26 / 42</text>
     <text x="462" y="116" fill="#8b949e" font-size="13">Latest release</text>
-    <text x="808" y="116" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">v0.3.0</text>
+    <text x="808" y="116" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">v0.4.0</text>
     <text x="462" y="150" fill="#8b949e" font-size="13">Releases</text>
-    <text x="808" y="150" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">3</text>
+    <text x="808" y="150" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">4</text>
     <text x="462" y="184" fill="#8b949e" font-size="13">Good first issues</text>
     <text x="808" y="184" fill="#e6edf3" font-size="13" font-weight="600" text-anchor="end">6</text>
   </g>
