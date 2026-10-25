@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [scripts/render-activity.mjs, .github/workflows/activity.yml]
+    paths: [scripts/render-activity.mjs, scripts/update-readme.mjs, .github/workflows/activity.yml]
 
 permissions:
   contents: write
@@ -27,14 +27,17 @@ jobs:
       - run: node scripts/render-activity.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Commit only when the card changed
+      - run: node scripts/update-readme.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit only when something changed
         run: |
-          git add assets/activity-dark.svg assets/activity-light.svg
+          git add assets/activity-dark.svg assets/activity-light.svg README.md
           if git diff --cached --quiet; then
             echo "No change"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update activity card"
+          git commit -m "Update activity card and reviews"
           git push

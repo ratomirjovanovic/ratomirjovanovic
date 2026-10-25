@@ -1,37 +1,67 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img src="assets/header-dark.svg" width="100%" alt="Ratomir Jovanovic, software engineer and founder. Fintech, security and product engineering.">
+  <img src="assets/header-dark.svg" width="100%" alt="Ratomir Jovanovic. Product leader, ISO 27001 Lead Auditor and author. 18 years across SaaS, fintech and payments.">
 </picture>
 
-I build software for payments, security and the products around them. My focus is on tools that make complex systems understandable: clear failure modes, honest documentation and privacy by default.
+<p>
+  <a href="https://ratomir.com"><img src="https://img.shields.io/badge/ratomir.com-111827?style=flat-square&logo=googlechrome&logoColor=white" alt="Website: ratomir.com"></a>
+  <a href="https://linkedin.com/in/ratomir"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://x.com/heyratomir"><img src="https://img.shields.io/badge/@heyratomir-000000?style=flat-square&logo=x&logoColor=white" alt="X: @heyratomir"></a>
+  <a href="https://www.amazon.com/stores/Ratomir-Jovanovic/author/B0FTHD1NX2"><img src="https://img.shields.io/badge/Books-FF9900?style=flat-square&logo=amazon&logoColor=white" alt="Books on Amazon"></a>
+</p>
 
-## Featured open source
+I have spent 18 years building products across SaaS, fintech and payments, much of it in regulated, audited and security-sensitive environments. Today I build payment infrastructure and security governance tools, and I am an ISO/IEC 27001:2022 Lead Auditor (CQI/IRCA). On GitHub I maintain open-source tooling for payment developers and review payment and webhook code in other projects.
+
+## Now
+
+| | |
+| --- | --- |
+| **[Meshtally](https://meshtally.com)** | Founder and Managing Director. Payment orchestration for high-volume merchants: PSP routing, failed-payment reduction, cost visibility and settlement clarity. |
+| **[PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)** | Maintainer. Open-source, local-first payment error decoder and transaction timeline visualizer. |
+| **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
+| **[Nanotesting](https://nanotesting.com)** | Founder. Automated security assessment for websites, APIs and repositories. |
+| **[SodaSoft](https://sodasoft.com)** | Founder. Venture studio for product strategy, design, engineering and launch. |
+
+## Open source
 
 ### [PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)
 
-A local-first payment error decoder and transaction timeline visualizer. Paste an API response, webhook or postback and see what the provider reported, what the code means, which events belong together and what looks wrong. Nothing leaves the browser.
+Paste an API response, webhook or postback and see what the provider reported, what the code means, which events belong together and what looks wrong. Nothing leaves the browser.
 
 <a href="https://ratomirjovanovic.github.io/PandaPayLens/">
   <img src="https://raw.githubusercontent.com/ratomirjovanovic/PandaPayLens/main/docs/media/social-preview.png" width="100%" alt="PandaPayLens: decode provider errors, rebuild the event timeline and catch duplicate, late and conflicting webhooks, locally in the browser.">
 </a>
 
-- Deterministic analysis: structural provider detection, documented error catalogs, correlation by explicit identifiers and explainable diagnostic rules.
-- Adapters for card processors, wallets, pay-by-bank and high-risk billing providers, each with an honest capability manifest.
-- Privacy by design: redaction before analysis, identifiers masked in exports, strict Content Security Policy, no server-side processing.
-- Static demo on GitHub Pages, offline CLI, and a Next.js app with a passkey-protected admin area.
+- **Deterministic analysis:** structural provider detection, documented error catalogs, correlation by explicit identifiers and explainable diagnostic rules.
+- **Wide coverage:** card processors, wallets, pay-by-bank, crypto and high-risk billing providers, each with an honest capability manifest.
+- **Privacy by design:** redaction before analysis, identifiers masked in exports, strict Content Security Policy, no server-side processing.
+- **Three ways to run it:** a static demo, an offline CLI and a Next.js app with a passkey-protected admin area.
 
-[Live demo](https://ratomirjovanovic.github.io/PandaPayLens/) · [Documentation](https://github.com/ratomirjovanovic/PandaPayLens/wiki) · [Releases](https://github.com/ratomirjovanovic/PandaPayLens/releases) · [Good first issues](https://github.com/ratomirjovanovic/PandaPayLens/labels/good%20first%20issue)
+[Live demo](https://ratomirjovanovic.github.io/PandaPayLens/) · [Docs](https://github.com/ratomirjovanovic/PandaPayLens/wiki) · [Releases](https://github.com/ratomirjovanovic/PandaPayLens/releases) · [Roadmap](https://github.com/ratomirjovanovic/PandaPayLens/blob/main/ROADMAP.md) · [Good first issues](https://github.com/ratomirjovanovic/PandaPayLens/labels/good%20first%20issue)
 
-## Engineering focus
+### Payshen SDKs
 
-| Area                 | What I work on                                                                                   |
-| -------------------- | ------------------------------------------------------------------------------------------------ |
-| Payments and fintech | provider APIs, webhooks and postbacks, decline and error semantics, payment lifecycles           |
-| Security             | data minimization, redaction, passkey (WebAuthn) authentication, RBAC, audit trails, CSP        |
-| Product engineering  | developer tools, clear UX for complex data, documentation that matches the code                 |
-| Delivery             | testing (unit, property-based, end-to-end), CI, static analysis, reproducible releases          |
+Client libraries for the Payshen payment orchestration API: payments, captures, voids, refunds, events and webhook verification.
 
-**Technologies:** TypeScript, Node.js, React, Next.js, Tailwind CSS, PostgreSQL (Neon), Drizzle ORM, Vitest, fast-check, Playwright, GitHub Actions, Vercel.
+[PHP](https://github.com/meetsodasoft/payshen-php) · [Python](https://github.com/meetsodasoft/payshen-python) · [WooCommerce](https://github.com/meetsodasoft/payshen-woocommerce)
+
+### Code reviews in other projects
+
+Recent public reviews, mostly payment, webhook and security changes:
+
+<!-- reviews:start -->
+| Project | Pull request reviewed |
+| --- | --- |
+| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12014](https://github.com/better-auth/better-auth/pull/12014) fix(stripe): refetch subscription in subscription webhooks |
+| [Adyen/adyen-web](https://github.com/Adyen/adyen-web) | [#4273](https://github.com/Adyen/adyen-web/pull/4273) Fix/prevent duplicate 3DS2 challenge completion |
+| [payloadcms/payload](https://github.com/payloadcms/payload) | [#19024](https://github.com/payloadcms/payload/pull/19024) fix(plugin-ecommerce): drop cart items from Stripe payment intent metadata |
+| [medusajs/medusa](https://github.com/medusajs/medusa) | [#17489](https://github.com/medusajs/medusa/pull/17489) fix(payment): recompute refunded amount when a refund fails at the provider |
+| [paypal/paypal-js](https://github.com/paypal/paypal-js) | [#1086](https://github.com/paypal/paypal-js/pull/1086) fix(types): add vaultSetupToken and specific liabilityShift union to CardFieldsOnApprov... |
+| [razorpay/razorpay-node](https://github.com/razorpay/razorpay-node) | [#495](https://github.com/razorpay/razorpay-node/pull/495) fix(security): use constant-time comparison for webhook signature validation \[closes #479\] |
+| [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2732](https://github.com/svix/svix-webhooks/pull/2732) fix(php,ruby): fallback to case-insensitive header lookup in webhook verify |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | [#41561](https://github.com/n8n-io/n8n/pull/41561) feat(Mailchimp Trigger Node): Add webhook signature verification |
+| [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#348](https://github.com/standard-webhooks/standard-webhooks/pull/348) Sign binary payloads byte for byte (JavaScript, Python) |
+<!-- reviews:end -->
 
 ## Activity
 
@@ -40,9 +70,34 @@ A local-first payment error decoder and transaction timeline visualizer. Paste a
   <img src="assets/activity-dark.svg" width="100%" alt="Public GitHub activity in the last 12 months and current PandaPayLens project facts.">
 </picture>
 
-<sub>Generated daily from public GitHub data by a workflow in this repository. GitHub's own contribution graph below is the authoritative view.</sub>
+<sub>Both the activity card and the review list above are generated daily from public GitHub data by a workflow in this repository.</sub>
 
-## Elsewhere
+## What I work on
 
-- Website: [ratomir.com](https://ratomir.com)
-- Contributions are welcome on [PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens/blob/main/CONTRIBUTING.md). Security issues: please use [private vulnerability reporting](https://github.com/ratomirjovanovic/PandaPayLens/security/advisories/new).
+| Area | Focus |
+| --- | --- |
+| Payments and fintech | PSP integrations, orchestration and routing, decline and error semantics, webhooks, settlement and reconciliation |
+| Security and GRC | ISO/IEC 27001 readiness and audits, risk and supplier management, control evidence, secure product design |
+| Product | Product strategy and discovery, UX architecture for complex enterprise data, product and QA governance |
+| Engineering | TypeScript and Node.js products, API clients, testing and CI, documentation that matches the code |
+
+<p>
+  <img src="https://skillicons.dev/icons?i=ts,js,nodejs,react,nextjs,tailwind,postgres,php,py,wordpress,vercel,githubactions&perline=12" alt="TypeScript, JavaScript, Node.js, React, Next.js, Tailwind CSS, PostgreSQL, PHP, Python, WordPress, Vercel, GitHub Actions">
+</p>
+
+## Track record
+
+| Years | Role |
+| --- | --- |
+| 2023 - 2025 | **Head of Product, Webio** (Ireland). Product and QA governance for a platform serving enterprise clients in regulated collections and payments, inside an ISO/IEC 27001-certified environment. Webio was acquired by Aryza in 2025. |
+| 2021 - 2022 | **UX Enterprise Architect, Japan Tobacco International** (Geneva). Unified data visualization strategy across departments. |
+| 2018 - 2021 | **Chief User Experience Architect, Crossover for Work** (ESW Capital). UX architecture across 10+ B2B enterprise platforms. |
+| 2016 - 2018 | **Chief Product Officer, Skout Deals** (Austin). Took a mobile platform from concept to iOS and Android; churn down by more than 32%. |
+
+More on [ratomir.com/about](https://ratomir.com/about).
+
+## Writing
+
+- **[How to Niche Down (and Actually Make Money)](https://a.co/d/01EkFp6c):** a 12-week framework for founders and agencies to position around one painful problem.
+- **[7 Days to Your Fintech PM Offer](https://ratomir.com/book):** an interview kit for product managers in payments, lending, KYC/AML, fraud and core banking.
+- **[Essays](https://ratomir.com/blog)** on GRC, ISO 27001, cybersecurity, product and payments.
