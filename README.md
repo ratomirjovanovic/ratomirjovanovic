@@ -14,7 +14,7 @@ I have spent 18 years building products across SaaS, fintech and payments, much 
 
 ## Now
 
-| | |
+| Venture | Role and focus |
 | --- | --- |
 | **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
 | **[PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)** | Maintainer. Open-source, local-first payment error decoder and transaction timeline visualizer. |
@@ -63,7 +63,7 @@ Recent public reviews, mostly payment, webhook and security changes:
 | [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#348](https://github.com/standard-webhooks/standard-webhooks/pull/348) Sign binary payloads byte for byte (JavaScript, Python) |
 <!-- reviews:end -->
 
-## PandaPayLens at a glance
+## Project facts
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
@@ -83,7 +83,7 @@ Recent public reviews, mostly payment, webhook and security changes:
 
 ### Toolbox
 
-| | |
+| Area | Tools |
 | --- | --- |
 | **Languages** | <img src="https://skillicons.dev/icons?i=go,ts,js,py,php,dart,kotlin" height="40" alt="Go, TypeScript, JavaScript, Python, PHP, Dart, Kotlin"> |
 | **Frameworks** | <img src="https://skillicons.dev/icons?i=nodejs,react,nextjs,tailwind,laravel,flutter" height="40" alt="Node.js, React, Next.js, Tailwind CSS, Laravel, Flutter"> |
