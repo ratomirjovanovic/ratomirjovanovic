@@ -16,7 +16,7 @@ I have spent 18 years building products across SaaS, fintech and payments, much 
 
 | | |
 | --- | --- |
-| **[Meshtally](https://meshtally.com)** | Founder and Managing Director. Payment orchestration for high-volume merchants: PSP routing, failed-payment reduction, cost visibility and settlement clarity. |
+| **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
 | **[PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)** | Maintainer. Open-source, local-first payment error decoder and transaction timeline visualizer. |
 | **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
 | **[Nanotesting](https://nanotesting.com)** | Founder. Automated security assessment for websites, APIs and repositories. |
@@ -41,7 +41,7 @@ Paste an API response, webhook or postback and see what the provider reported, w
 
 ### Payshen SDKs
 
-Client libraries for the Payshen payment orchestration API: payments, captures, voids, refunds, events and webhook verification.
+Official client libraries for the [Payshen](https://www.payshen.com) payment orchestration API: payments, captures, voids, refunds, events and webhook verification.
 
 [PHP](https://github.com/meetsodasoft/payshen-php) · [Python](https://github.com/meetsodasoft/payshen-python) · [WooCommerce](https://github.com/meetsodasoft/payshen-woocommerce)
 
@@ -63,14 +63,14 @@ Recent public reviews, mostly payment, webhook and security changes:
 | [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#348](https://github.com/standard-webhooks/standard-webhooks/pull/348) Sign binary payloads byte for byte (JavaScript, Python) |
 <!-- reviews:end -->
 
-## Activity
+## PandaPayLens at a glance
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img src="assets/activity-dark.svg" width="100%" alt="Public GitHub activity in the last 12 months and current PandaPayLens project facts.">
+  <img src="assets/activity-dark.svg" width="100%" alt="PandaPayLens at a glance: supported payment providers, latest release, open good first issues and license.">
 </picture>
 
-<sub>Both the activity card and the review list above are generated daily from public GitHub data by a workflow in this repository.</sub>
+<sub>This card and the review list above are generated daily from public GitHub data. My contribution activity is GitHub's own overview, below this README.</sub>
 
 ## What I work on
 
@@ -79,11 +79,16 @@ Recent public reviews, mostly payment, webhook and security changes:
 | Payments and fintech | PSP integrations, orchestration and routing, decline and error semantics, webhooks, settlement and reconciliation |
 | Security and GRC | ISO/IEC 27001 readiness and audits, risk and supplier management, control evidence, secure product design |
 | Product | Product strategy and discovery, UX architecture for complex enterprise data, product and QA governance |
-| Engineering | TypeScript and Node.js products, API clients, testing and CI, documentation that matches the code |
+| Engineering | TypeScript, Go and Python services, API clients and SDKs, testing and CI, documentation that matches the code |
 
-<p>
-  <img src="https://skillicons.dev/icons?i=ts,js,nodejs,react,nextjs,tailwind,postgres,php,py,wordpress,vercel,githubactions&perline=12" alt="TypeScript, JavaScript, Node.js, React, Next.js, Tailwind CSS, PostgreSQL, PHP, Python, WordPress, Vercel, GitHub Actions">
-</p>
+### Toolbox
+
+| | |
+| --- | --- |
+| **Languages** | <img src="https://skillicons.dev/icons?i=go,ts,js,py,php,dart,kotlin" height="40" alt="Go, TypeScript, JavaScript, Python, PHP, Dart, Kotlin"> |
+| **Frameworks** | <img src="https://skillicons.dev/icons?i=nodejs,react,nextjs,tailwind,laravel,flutter" height="40" alt="Node.js, React, Next.js, Tailwind CSS, Laravel, Flutter"> |
+| **Data and cloud** | <img src="https://skillicons.dev/icons?i=postgres,vercel,aws,gcp" height="40" alt="PostgreSQL, Vercel, AWS, Google Cloud"> <img src="https://img.shields.io/badge/Neon-00E599?style=flat-square&logo=neon&logoColor=black" height="28" alt="Neon serverless Postgres"> |
+| **Delivery** | <img src="https://skillicons.dev/icons?i=docker,githubactions,git,bash" height="40" alt="Docker, GitHub Actions, Git, Bash"> |
 
 ## Track record
 
