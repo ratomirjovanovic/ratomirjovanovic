@@ -34,7 +34,7 @@ Paste an API response, webhook or postback and see what the provider reported, w
 
 - **Deterministic analysis:** structural provider detection, documented error catalogs, correlation by explicit identifiers and explainable diagnostic rules.
 - **Wide coverage:** card processors, wallets, pay-by-bank, crypto and high-risk billing providers, each with an honest capability manifest.
-- **Privacy by design:** redaction before analysis, identifiers masked in exports, strict Content Security Policy, no server-side processing.
+- **Privacy by design:** sensitive data redacted from everything shown or exported, identifiers masked, strict Content Security Policy, no server-side processing.
 - **Three ways to run it:** a static demo, an offline CLI and a Next.js app with a passkey-protected admin area.
 
 [Live demo](https://ratomirjovanovic.github.io/PandaPayLens/) · [Docs](https://github.com/ratomirjovanovic/PandaPayLens/wiki) · [Releases](https://github.com/ratomirjovanovic/PandaPayLens/releases) · [Roadmap](https://github.com/ratomirjovanovic/PandaPayLens/blob/main/ROADMAP.md) · [Good first issues](https://github.com/ratomirjovanovic/PandaPayLens/labels/good%20first%20issue)
