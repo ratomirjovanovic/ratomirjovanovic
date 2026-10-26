@@ -50,18 +50,18 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 Recent public reviews, mostly payment, webhook and security changes. The last column shows what GitHub recorded after the review: whether the author pushed changes, whether I approved, and whether the pull request was merged.
 
 <!-- reviews:start -->
-<sub>10 pull requests in 10 projects · 4 revised by their authors after the review · 0 merged</sub>
+<sub>10 pull requests in 10 projects · 5 revised by their authors after the review · 0 merged</sub>
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
 | [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1824](https://github.com/juspay/hyperswitch-web/pull/1824) fix: validate payment postMessage origins and sources | Revised after review |
+| [Adyen/adyen-web](https://github.com/Adyen/adyen-web) | [#4273](https://github.com/Adyen/adyen-web/pull/4273) Fix/prevent duplicate 3DS2 challenge completion | Revised after review |
 | [paypal/paypal-js](https://github.com/paypal/paypal-js) | [#1086](https://github.com/paypal/paypal-js/pull/1086) fix(types): type onApprove per flow and add CardFieldsLiabilityShift union | Revised, then approved |
 | [razorpay/razorpay-node](https://github.com/razorpay/razorpay-node) | [#495](https://github.com/razorpay/razorpay-node/pull/495) fix(security): use constant-time comparison for webhook signature validation... | Revised after review |
 | [stripe/stripe-react-native](https://github.com/stripe/stripe-react-native) | [#2752](https://github.com/stripe/stripe-react-native/pull/2752) fix(payment): map phone, carrier, and trackingNumber in shippingDetails | Open |
 | [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2848](https://github.com/stripe/stripe-node/pull/2848) Preserve endpointFetch response headers | Open |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12014](https://github.com/better-auth/better-auth/pull/12014) fix(stripe): refetch subscription in subscription webhooks | Closed |
 | [payloadcms/payload](https://github.com/payloadcms/payload) | [#19024](https://github.com/payloadcms/payload/pull/19024) fix(plugin-ecommerce): drop cart items from Stripe payment intent metadata | Revised after review |
-| [Adyen/adyen-web](https://github.com/Adyen/adyen-web) | [#4273](https://github.com/Adyen/adyen-web/pull/4273) Fix/prevent duplicate 3DS2 challenge completion | Open |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17489](https://github.com/medusajs/medusa/pull/17489) fix(payment): recompute refunded amount when a refund fails at the provider | Open |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2732](https://github.com/svix/svix-webhooks/pull/2732) fix(php,ruby): fallback to case-insensitive header lookup in webhook verify | Open |
 <!-- reviews:end -->
