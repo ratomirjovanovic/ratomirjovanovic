@@ -52,15 +52,15 @@ Recent public reviews, mostly payment, webhook and security changes:
 <!-- reviews:start -->
 | Project | Pull request reviewed |
 | --- | --- |
+| [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1824](https://github.com/juspay/hyperswitch-web/pull/1824) fix: validate payment postMessage origins and sources |
+| [paypal/paypal-js](https://github.com/paypal/paypal-js) | [#1086](https://github.com/paypal/paypal-js/pull/1086) fix(types): type onApprove per flow and add CardFieldsLiabilityShift union |
 | [razorpay/razorpay-node](https://github.com/razorpay/razorpay-node) | [#495](https://github.com/razorpay/razorpay-node/pull/495) fix(security): use constant-time comparison for webhook signature validation \[closes #479\] |
 | [stripe/stripe-react-native](https://github.com/stripe/stripe-react-native) | [#2752](https://github.com/stripe/stripe-react-native/pull/2752) fix(payment): map phone, carrier, and trackingNumber in shippingDetails |
 | [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2848](https://github.com/stripe/stripe-node/pull/2848) Preserve endpointFetch response headers |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12014](https://github.com/better-auth/better-auth/pull/12014) fix(stripe): refetch subscription in subscription webhooks |
 | [payloadcms/payload](https://github.com/payloadcms/payload) | [#19024](https://github.com/payloadcms/payload/pull/19024) fix(plugin-ecommerce): drop cart items from Stripe payment intent metadata |
-| [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1824](https://github.com/juspay/hyperswitch-web/pull/1824) fix: validate payment postMessage origins and sources |
 | [Adyen/adyen-web](https://github.com/Adyen/adyen-web) | [#4273](https://github.com/Adyen/adyen-web/pull/4273) Fix/prevent duplicate 3DS2 challenge completion |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17489](https://github.com/medusajs/medusa/pull/17489) fix(payment): recompute refunded amount when a refund fails at the provider |
-| [paypal/paypal-js](https://github.com/paypal/paypal-js) | [#1086](https://github.com/paypal/paypal-js/pull/1086) fix(types): add vaultSetupToken and specific liabilityShift union to CardFieldsOnApprov... |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2732](https://github.com/svix/svix-webhooks/pull/2732) fix(php,ruby): fallback to case-insensitive header lookup in webhook verify |
 <!-- reviews:end -->
 
