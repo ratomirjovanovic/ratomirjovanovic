@@ -28,8 +28,8 @@ I have spent 18 years building products across SaaS, fintech and payments, much 
 
 Paste an API response, webhook or postback and see what the provider reported, what the code means, which events belong together and what looks wrong. Nothing leaves the browser.
 
-<a href="https://ratomirjovanovic.github.io/PandaPayLens/">
-  <img src="https://raw.githubusercontent.com/ratomirjovanovic/PandaPayLens/main/docs/media/social-preview.png" width="100%" alt="PandaPayLens: decode provider errors, rebuild the event timeline and catch duplicate, late and conflicting webhooks, locally in the browser.">
+<a href="https://ratomirjovanovic.github.io/PandaPayLens/media/pandapaylens-demo.mp4">
+  <img src="https://raw.githubusercontent.com/ratomirjovanovic/PandaPayLens/main/docs/media/pandapaylens-demo-play.jpg" width="100%" alt="Play the 60 second PandaPayLens demo video: a synthetic Adyen log with two authorizations for one order is analyzed and a possible double charge is flagged.">
 </a>
 
 - **Deterministic analysis:** structural provider detection, documented error catalogs, correlation by explicit identifiers and explainable diagnostic rules.
@@ -37,7 +37,7 @@ Paste an API response, webhook or postback and see what the provider reported, w
 - **Privacy by design:** sensitive data redacted from everything shown or exported, identifiers masked, strict Content Security Policy, no server-side processing.
 - **Three ways to run it:** a static demo, an offline CLI and a Next.js app with a passkey-protected admin area.
 
-[Live demo](https://ratomirjovanovic.github.io/PandaPayLens/) · [Docs](https://github.com/ratomirjovanovic/PandaPayLens/wiki) · [Releases](https://github.com/ratomirjovanovic/PandaPayLens/releases) · [Roadmap](https://github.com/ratomirjovanovic/PandaPayLens/blob/main/ROADMAP.md) · [Good first issues](https://github.com/ratomirjovanovic/PandaPayLens/labels/good%20first%20issue)
+[Live demo](https://ratomirjovanovic.github.io/PandaPayLens/) · [Demo video (1 min)](https://ratomirjovanovic.github.io/PandaPayLens/media/pandapaylens-demo.mp4) · [Docs](https://github.com/ratomirjovanovic/PandaPayLens/wiki) · [Releases](https://github.com/ratomirjovanovic/PandaPayLens/releases) · [Roadmap](https://github.com/ratomirjovanovic/PandaPayLens/blob/main/ROADMAP.md) · [Good first issues](https://github.com/ratomirjovanovic/PandaPayLens/labels/good%20first%20issue)
 
 ### Payshen SDKs
 
