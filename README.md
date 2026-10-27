@@ -16,6 +16,7 @@ I have spent 18 years building software across SaaS, fintech and payments, much 
 | --- | --- |
 | **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
 | **[PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)** | Maintainer. Open-source, local-first payment error decoder and transaction timeline visualizer. |
+| **[PenSec](https://github.com/ratomirjovanovic/pensec)** | Maintainer. Local, evidence-based application security assessment as a Go CLI and a Claude Code plugin. |
 | **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
 | **[Nanotesting](https://nanotesting.com)** | Founder. Automated security assessment for websites, APIs and repositories. |
 | **[SodaSoft](https://sodasoft.com)** | Founder. Venture studio for software products: design, engineering and launch. |
@@ -36,6 +37,24 @@ Paste an API response, webhook or postback and see what the provider reported, w
 - **Three ways to run it:** a static demo, an offline CLI and a Next.js app with a passkey-protected admin area.
 
 [Live demo](https://ratomirjovanovic.github.io/PandaPayLens/) · [Demo video (1 min)](https://ratomirjovanovic.github.io/PandaPayLens/media/pandapaylens-demo.mp4) · [Docs](https://github.com/ratomirjovanovic/PandaPayLens/wiki) · [Releases](https://github.com/ratomirjovanovic/PandaPayLens/releases) · [Roadmap](https://github.com/ratomirjovanovic/PandaPayLens/blob/main/ROADMAP.md) · [Good first issues](https://github.com/ratomirjovanovic/PandaPayLens/labels/good%20first%20issue)
+
+### [PenSec](https://github.com/ratomirjovanovic/pensec)
+
+Application security assessment for your own repositories that also tells you what it did not test. A Go CLI and a Claude Code plugin: passive by default, an evidence ledger across sessions, secrets redacted before anything is stored, and network tests only after a person approves the scope.
+
+<a href="https://ratomirjovanovic.github.io/pensec/demo/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ratomirjovanovic/pensec/main/docs/media/findings-dark.png">
+    <img src="https://raw.githubusercontent.com/ratomirjovanovic/pensec/main/docs/media/findings-light.png" width="100%" alt="PenSec findings explorer for a deliberately vulnerable sample app: confirmed and suspected findings with severity, file and control">
+  </picture>
+</a>
+
+- **Honest coverage:** only PASS and FAIL are decisive; blocked, unsupported or suspected controls never count as secure.
+- **No AI-confirmed findings:** review agents can only record hypotheses, and the engine reads and redacts the cited lines itself.
+- **Wide static coverage:** secrets, injection sinks, CI/CD, containers, Terraform, Android and iOS manifests, MCP and LLM output reaching exec sinks.
+- **Reports:** HTML, Markdown, JSON, SARIF 2.1.0 and CSV, with a `--fail-on` gate for CI.
+
+[Live demo](https://ratomirjovanovic.github.io/pensec/demo/) · [Website](https://ratomirjovanovic.github.io/pensec/) · [Docs](https://github.com/ratomirjovanovic/pensec/wiki) · [Quick start](https://github.com/ratomirjovanovic/pensec#quick-start) · [Roadmap](https://github.com/ratomirjovanovic/pensec/issues)
 
 ### Payshen SDKs
 
