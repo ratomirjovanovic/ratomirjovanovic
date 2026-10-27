@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="168" viewBox="0 0 840 168" role="img" aria-labelledby="t d">
   <title id="t">PandaPayLens at a glance</title>
-  <desc id="d">Payment providers: 40 of 42 on the roadmap. Latest release: v0.14.0 14 releases. Good first issues: 6 open for contributors. License: Apache-2.0 local-first, no tracking.</desc>
+  <desc id="d">Payment providers: 40 of 42 on the roadmap. Latest release: v0.15.0 15 releases. Good first issues: 6 open for contributors. License: Apache-2.0 local-first, no tracking.</desc>
   <rect x="0.5" y="0.5" width="839" height="167" rx="12" fill="#ffffff" stroke="#d0d7de"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif">
     <text x="32" y="42" fill="#1f2328" font-size="15" font-weight="600">PandaPayLens at a glance</text>
@@ -8,8 +8,8 @@
     <text x="32" y="116" fill="#1a7f37" font-size="26" font-weight="700">40</text>
     <text x="32" y="138" fill="#59636e" font-size="12">of 42 on the roadmap</text><line x1="214" y1="64" x2="214" y2="140" stroke="#d0d7de"/>
     <text x="226" y="84" fill="#59636e" font-size="12">Latest release</text>
-    <text x="226" y="116" fill="#1f2328" font-size="26" font-weight="700">v0.14.0</text>
-    <text x="226" y="138" fill="#59636e" font-size="12">14 releases</text><line x1="408" y1="64" x2="408" y2="140" stroke="#d0d7de"/>
+    <text x="226" y="116" fill="#1f2328" font-size="26" font-weight="700">v0.15.0</text>
+    <text x="226" y="138" fill="#59636e" font-size="12">15 releases</text><line x1="408" y1="64" x2="408" y2="140" stroke="#d0d7de"/>
     <text x="420" y="84" fill="#59636e" font-size="12">Good first issues</text>
     <text x="420" y="116" fill="#1f2328" font-size="26" font-weight="700">6</text>
     <text x="420" y="138" fill="#59636e" font-size="12">open for contributors</text><line x1="602" y1="64" x2="602" y2="140" stroke="#d0d7de"/>
