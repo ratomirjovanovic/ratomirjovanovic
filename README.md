@@ -1,16 +1,14 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img src="assets/header-dark.svg" width="100%" alt="Ratomir Jovanovic. Product leader, ISO 27001 Lead Auditor and author. 18 years across SaaS, fintech and payments.">
+  <img src="assets/header-dark.svg" width="100%" alt="Ratomir Jovanovic. Payments and security engineering, founder of Payshen. 18 years across SaaS, fintech and payments.">
 </picture>
 
 <p>
-  <a href="https://ratomir.com"><img src="https://img.shields.io/badge/ratomir.com-111827?style=flat-square&logo=googlechrome&logoColor=white" alt="Website: ratomir.com"></a>
   <a href="https://linkedin.com/in/ratomir"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://x.com/heyratomir"><img src="https://img.shields.io/badge/@heyratomir-000000?style=flat-square&logo=x&logoColor=white" alt="X: @heyratomir"></a>
-  <a href="https://www.amazon.com/stores/Ratomir-Jovanovic/author/B0FTHD1NX2"><img src="https://img.shields.io/badge/Books-FF9900?style=flat-square&logo=amazon&logoColor=white" alt="Books on Amazon"></a>
 </p>
 
-I have spent 18 years building products across SaaS, fintech and payments, much of it in regulated, audited and security-sensitive environments. Today I build payment infrastructure and security governance tools, and I am an ISO/IEC 27001:2022 Lead Auditor (CQI/IRCA). On GitHub I maintain open-source tooling for payment developers and review payment and webhook code in other projects.
+I have spent 18 years building software across SaaS, fintech and payments, much of it in regulated, audited and security-sensitive environments. Today I build payment infrastructure and security tooling, from Payshen's routing engine to its SDKs and WooCommerce plugin. On GitHub I maintain open-source tooling for payment developers and review payment and webhook code in other projects.
 
 ## Now
 
@@ -20,7 +18,7 @@ I have spent 18 years building products across SaaS, fintech and payments, much 
 | **[PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)** | Maintainer. Open-source, local-first payment error decoder and transaction timeline visualizer. |
 | **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
 | **[Nanotesting](https://nanotesting.com)** | Founder. Automated security assessment for websites, APIs and repositories. |
-| **[SodaSoft](https://sodasoft.com)** | Founder. Venture studio for product strategy, design, engineering and launch. |
+| **[SodaSoft](https://sodasoft.com)** | Founder. Venture studio for software products: design, engineering and launch. |
 
 ## Open source
 
@@ -80,8 +78,7 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 | Area | Focus |
 | --- | --- |
 | Payments and fintech | PSP integrations, orchestration and routing, decline and error semantics, webhooks, settlement and reconciliation |
-| Security and GRC | ISO/IEC 27001 readiness and audits, risk and supplier management, control evidence, secure product design |
-| Product | Product strategy and discovery, UX architecture for complex enterprise data, product and QA governance |
+| Security and GRC | ISO/IEC 27001 readiness, risk and supplier management, control evidence, secure design |
 | Engineering | TypeScript, Go and Python services, API clients and SDKs, testing and CI, documentation that matches the code |
 
 ### Toolbox
@@ -92,20 +89,3 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 | **Frameworks** | <img src="https://skillicons.dev/icons?i=nodejs,react,nextjs,tailwind,laravel,flutter" height="40" alt="Node.js, React, Next.js, Tailwind CSS, Laravel, Flutter"> |
 | **Data and cloud** | <img src="https://skillicons.dev/icons?i=postgres,vercel,aws,gcp" height="40" alt="PostgreSQL, Vercel, AWS, Google Cloud"> <img src="https://img.shields.io/badge/Neon-00E599?style=flat-square&logo=neon&logoColor=black" height="28" alt="Neon serverless Postgres"> |
 | **Delivery** | <img src="https://skillicons.dev/icons?i=docker,githubactions,git,bash" height="40" alt="Docker, GitHub Actions, Git, Bash"> |
-
-## Track record
-
-| Years | Role |
-| --- | --- |
-| 2023 - 2025 | **Head of Product, Webio** (Ireland). Product and QA governance for a platform serving enterprise clients in regulated collections and payments, inside an ISO/IEC 27001-certified environment. Webio was acquired by Aryza in 2025. |
-| 2021 - 2022 | **UX Enterprise Architect, Japan Tobacco International** (Geneva). Unified data visualization strategy across departments. |
-| 2018 - 2021 | **Chief User Experience Architect, Crossover for Work** (ESW Capital). UX architecture across 10+ B2B enterprise platforms. |
-| 2016 - 2018 | **Chief Product Officer, Skout Deals** (Austin). Took a mobile platform from concept to iOS and Android; churn down by more than 32%. |
-
-More on [ratomir.com/about](https://ratomir.com/about).
-
-## Writing
-
-- **[How to Niche Down (and Actually Make Money)](https://a.co/d/01EkFp6c):** a 12-week framework for founders and agencies to position around one painful problem.
-- **[7 Days to Your Fintech PM Offer](https://ratomir.com/book):** an interview kit for product managers in payments, lending, KYC/AML, fraud and core banking.
-- **[Essays](https://ratomir.com/blog)** on GRC, ISO 27001, cybersecurity, product and payments.
