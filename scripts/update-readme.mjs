@@ -1,6 +1,6 @@
 // Updates the generated sections of README.md from public GitHub data:
 // pull requests reviewed in other people's repositories, with what happened
-// after the review. Runs in GitHub Actions with the workflow token. No
+// after the review, and issues opened in other people's projects. Runs in GitHub Actions with the workflow token. No
 // dependencies.
 import { readFileSync, writeFileSync } from "node:fs";
 
@@ -17,7 +17,7 @@ async function api(path) {
 }
 
 const search = async (q) =>
-  (await api(`search/issues?q=${encodeURIComponent(q)}&sort=updated&order=desc&per_page=30`)).items ?? [];
+  (await api(`search/issues?q=${encodeURIComponent(q)}&sort=updated&order=desc&per_page=100`)).items ?? [];
 
 const repoOf = (item) => item.repository_url.replace("https://api.github.com/repos/", "");
 const esc = (s) => s.replace(/[|<>[\]]/g, (c) => `\\${c}`);
@@ -43,13 +43,16 @@ async function outcome(item) {
   return { text: "Open", revised };
 }
 
-const reviewed = (await search(`type:pr reviewed-by:${LOGIN} -user:${LOGIN} is:public`))
-  .filter((i) => i.user?.login !== LOGIN)
-  .slice(0, 10);
+// The summary counts every review the search returns; the table lists the
+// most recently updated ones.
+const SHOWN = 12;
+const reviewed = (await search(`type:pr reviewed-by:${LOGIN} -user:${LOGIN} is:public`)).filter(
+  (i) => i.user?.login !== LOGIN,
+);
 
 const results = await Promise.all(reviewed.map(async (i) => ({ item: i, ...(await outcome(i)) })));
 
-const rows = results.map(({ item: i, text }) => {
+const rows = results.slice(0, SHOWN).map(({ item: i, text }) => {
   const title = i.title.length > 80 ? `${i.title.slice(0, 77).trimEnd()}...` : i.title;
   return `| [${repoOf(i)}](https://github.com/${repoOf(i)}) | [#${i.number}](${i.html_url}) ${esc(title)} | ${text} |`;
 });
@@ -73,12 +76,34 @@ const block = rows.length
     ].join("\n")
   : "_No public reviews yet._";
 
+// Issues I opened in other people's projects this year, outside my own
+// organization.
+const OWN_ORGS = ["meetsodasoft"];
+const issues = (
+  await search(`type:issue author:${LOGIN} -user:${LOGIN} is:public created:>=2026-01-01`)
+).filter((i) => !OWN_ORGS.includes(repoOf(i).split("/")[0]));
+const issueState = (i) => (i.state === "open" ? "Open" : i.state_reason === "completed" ? "Fixed" : "Closed");
+const issueBlock = issues.length
+  ? [
+      "| Project | Issue | Status |",
+      "| --- | --- | --- |",
+      ...issues.map((i) => {
+        const title = i.title.length > 80 ? `${i.title.slice(0, 77).trimEnd()}...` : i.title;
+        return `| [${repoOf(i)}](https://github.com/${repoOf(i)}) | [#${i.number}](${i.html_url}) ${esc(title)} | ${issueState(i)} |`;
+      }),
+    ].join("\n")
+  : "_None yet._";
+
+function replaceBlock(text, name, content) {
+  const start = `<!-- ${name}:start -->`;
+  const end = `<!-- ${name}:end -->`;
+  const i = text.indexOf(start);
+  const j = text.indexOf(end);
+  if (i === -1 || j === -1) throw new Error(`README markers for ${name} not found`);
+  return `${text.slice(0, i + start.length)}\n${content}\n${text.slice(j)}`;
+}
+
 const readme = readFileSync("README.md", "utf8");
-const start = "<!-- reviews:start -->";
-const end = "<!-- reviews:end -->";
-const i = readme.indexOf(start);
-const j = readme.indexOf(end);
-if (i === -1 || j === -1) throw new Error("README markers not found");
-const next = `${readme.slice(0, i + start.length)}\n${block}\n${readme.slice(j)}`;
+const next = replaceBlock(replaceBlock(readme, "reviews", block), "issues", issueBlock);
 if (next !== readme) writeFileSync("README.md", next);
-console.log(`reviews: ${rows.length}, revised: ${revisedCount}, merged: ${mergedCount}`);
+console.log(`reviews: ${results.length}, revised: ${revisedCount}, merged: ${mergedCount}, issues: ${issues.length}`);
