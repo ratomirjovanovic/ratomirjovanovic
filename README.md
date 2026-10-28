@@ -79,11 +79,14 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 Recent public reviews, mostly payment, webhook and security changes. The last column shows what GitHub recorded after the review: whether the author pushed changes, whether I approved, and whether the pull request was merged.
 
 <!-- reviews:start -->
-<sub>17 pull requests in 15 projects · 7 revised by their authors after the review · 3 merged</sub>
+<sub>20 pull requests in 16 projects · 7 revised by their authors after the review · 5 merged</sub>
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
+| [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1829](https://github.com/juspay/hyperswitch-web/pull/1829) fix: preserve 3DS messages before closing fullscreen frames | Merged |
 | [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#348](https://github.com/standard-webhooks/standard-webhooks/pull/348) Sign binary payloads byte for byte (JavaScript, Python) | Revised after review |
+| [DataDog/dd-trace-js](https://github.com/DataDog/dd-trace-js) | [#10932](https://github.com/DataDog/dd-trace-js/pull/10932) fix(appsec): wrap shared Stripe webhooks methods only once | Open |
+| [medusajs/medusa](https://github.com/medusajs/medusa) | [#17538](https://github.com/medusajs/medusa/pull/17538) fix(medusa): reject webhooks for nonexistent providers | Merged |
 | [payloadcms/payload](https://github.com/payloadcms/payload) | [#19024](https://github.com/payloadcms/payload/pull/19024) fix(plugin-ecommerce): drop cart items from Stripe payment intent metadata | Closed |
 | [Adyen/adyen-web](https://github.com/Adyen/adyen-web) | [#4273](https://github.com/Adyen/adyen-web/pull/4273) Fix/prevent duplicate 3DS2 challenge completion | Merged after revision |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12049](https://github.com/better-auth/better-auth/pull/12049) fix(account): share and guard concurrent provider token refreshes | Revised after review |
@@ -92,9 +95,6 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 | [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | [#1123](https://github.com/mark3labs/mcp-go/pull/1123) fix(oauth): refresh an access token shortly before it expires | Open |
 | [paypal/paypal-js](https://github.com/paypal/paypal-js) | [#1100](https://github.com/paypal/paypal-js/pull/1100) fix(paypal-js): only reuse a pending v6 script for the same namespace | Open |
 | [razorpay/razorpay-node](https://github.com/razorpay/razorpay-node) | [#495](https://github.com/razorpay/razorpay-node/pull/495) fix(security): use constant-time comparison for webhook signature validation... | Revised, then approved |
-| [n8n-io/n8n](https://github.com/n8n-io/n8n) | [#41561](https://github.com/n8n-io/n8n/pull/41561) feat(Mailchimp Trigger Node): Add webhook signature verification | Merged |
-| [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1824](https://github.com/juspay/hyperswitch-web/pull/1824) fix: validate payment postMessage origins and sources | Merged after revision |
-| [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2848](https://github.com/stripe/stripe-node/pull/2848) Preserve endpointFetch response headers | Open |
 <!-- reviews:end -->
 
 ### Issues raised in other projects
@@ -104,6 +104,10 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 <!-- issues:start -->
 | Project | Issue | Status |
 | --- | --- | --- |
+| [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816) \[Bug\]: HmacValidator accepts a malformed HMAC key as an empty key | Open |
+| [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1831](https://github.com/juspay/hyperswitch-web/issues/1831) 3DS authentication: a failed auth call falls through to the frictionless submit | Open |
+| [golang/go](https://github.com/golang/go) | [#82658](https://github.com/golang/go/issues/82658) x/oauth2: DeviceAccessToken panics on a negative or very large interval | Open |
+| [medusajs/medusa](https://github.com/medusajs/medusa) | [#17544](https://github.com/medusajs/medusa/issues/17544) \[Bug\]: Payment providers removed from config are never disabled in payment_pr... | Open |
 | [payloadcms/payload](https://github.com/payloadcms/payload) | [#19055](https://github.com/payloadcms/payload/issues/19055) plugin-ecommerce: restore the Stripe cart drift check with a metadata digest,... | Open |
 | [supabase/ssr](https://github.com/supabase/ssr) | [#209](https://github.com/supabase/ssr/issues/209) tsconfig.json: outDir without rootDir triggers TS6059 / migration warning whe... | Fixed |
 <!-- issues:end -->
