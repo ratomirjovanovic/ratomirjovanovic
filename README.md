@@ -8,20 +8,45 @@
   <a href="https://x.com/heyratomir"><img src="https://img.shields.io/badge/@heyratomir-000000?style=flat-square&logo=x&logoColor=white" alt="X: @heyratomir"></a>
 </p>
 
-I have spent 18 years building software across SaaS, fintech and payments, much of it in regulated, audited and security-sensitive environments. Today I build payment infrastructure and security tooling, from Payshen's routing engine to its SDKs and WooCommerce plugin. On GitHub I maintain open-source tooling for payment developers and review payment and webhook code in other projects.
+I have spent 18 years building software across SaaS, fintech and payments, much of it in regulated, audited and security-sensitive environments. Today most of my open-source time goes into [PenSec](https://github.com/ratomirjovanovic/pensec), a local application security assessment engine that keeps evidence for every finding and says plainly what it did not test. Alongside it I build payment infrastructure at Payshen, maintain tooling for payment developers and review payment, webhook and auth code in other projects.
 
 ## Now
 
 | Venture | Role and focus |
 | --- | --- |
+| **[PenSec](https://github.com/ratomirjovanovic/pensec)** | Maintainer, main open-source project. Local, evidence-based application security assessment as a Go CLI and a Claude Code plugin. |
 | **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
 | **[PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)** | Maintainer. Open-source, local-first payment error decoder and transaction timeline visualizer. |
-| **[PenSec](https://github.com/ratomirjovanovic/pensec)** | Maintainer. Local, evidence-based application security assessment as a Go CLI and a Claude Code plugin. |
 | **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
 | **[Nanotesting](https://nanotesting.com)** | Founder. Automated security assessment for websites, APIs and repositories. |
 | **[SodaSoft](https://sodasoft.com)** | Founder. Venture studio for software products: design, engineering and launch. |
 
 ## Open source
+
+### [PenSec](https://github.com/ratomirjovanovic/pensec)
+
+Application security assessment for your own repositories that also tells you what it did not test. Most scanners print alerts and stop; PenSec keeps a ledger of every control it could check, how it checked it and the redacted evidence, and lists every control it could not decide. Passive by default, network tests only after a person approves the scope.
+
+<a href="https://ratomirjovanovic.github.io/pensec/demo/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ratomirjovanovic/pensec/main/docs/media/findings-dark.png">
+    <img src="https://raw.githubusercontent.com/ratomirjovanovic/pensec/main/docs/media/findings-light.png" width="100%" alt="PenSec findings explorer for a deliberately vulnerable sample app: confirmed and suspected findings with severity, file and control">
+  </picture>
+</a>
+
+- **Honest coverage:** only PASS and FAIL are decisive; blocked, unsupported or suspected controls never count as secure.
+- **Evidence, not opinions:** each finding links to a redacted, SHA-256 addressed evidence record and is fingerprinted across runs, so a fix counts only when the check runs again.
+- **No AI-confirmed findings:** review agents can only record hypotheses, and the engine reads and redacts the cited lines itself.
+- **Wide static coverage:** secrets, injection sinks, CI/CD, containers, Terraform, Android and iOS manifests, webhooks, MCP and LLM output reaching exec sinks.
+- **Reports and CI:** HTML, Markdown, JSON, SARIF 2.1.0 and CSV, with a `--fail-on` gate. Release binaries are reproducible, with checksums, an SBOM and signed provenance.
+
+```text
+/plugin marketplace add ratomirjovanovic/pensec
+/plugin install pensec@pensec
+/pensec:scan
+```
+
+[Live demo](https://ratomirjovanovic.github.io/pensec/demo/) · [Website](https://ratomirjovanovic.github.io/pensec/) · [Docs](https://github.com/ratomirjovanovic/pensec/wiki) · [Quick start](https://github.com/ratomirjovanovic/pensec#quick-start) · [Releases](https://github.com/ratomirjovanovic/pensec/releases) · [Roadmap](https://github.com/ratomirjovanovic/pensec#roadmap)
 
 ### [PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)
 
@@ -37,24 +62,6 @@ Paste an API response, webhook or postback and see what the provider reported, w
 - **Three ways to run it:** a static demo, an offline CLI and a Next.js app with a passkey-protected admin area.
 
 [Live demo](https://ratomirjovanovic.github.io/PandaPayLens/) · [Demo video (1 min)](https://ratomirjovanovic.github.io/PandaPayLens/media/pandapaylens-demo.mp4) · [Docs](https://github.com/ratomirjovanovic/PandaPayLens/wiki) · [Releases](https://github.com/ratomirjovanovic/PandaPayLens/releases) · [Roadmap](https://github.com/ratomirjovanovic/PandaPayLens/blob/main/ROADMAP.md) · [Good first issues](https://github.com/ratomirjovanovic/PandaPayLens/labels/good%20first%20issue)
-
-### [PenSec](https://github.com/ratomirjovanovic/pensec)
-
-Application security assessment for your own repositories that also tells you what it did not test. A Go CLI and a Claude Code plugin: passive by default, an evidence ledger across sessions, secrets redacted before anything is stored, and network tests only after a person approves the scope.
-
-<a href="https://ratomirjovanovic.github.io/pensec/demo/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ratomirjovanovic/pensec/main/docs/media/findings-dark.png">
-    <img src="https://raw.githubusercontent.com/ratomirjovanovic/pensec/main/docs/media/findings-light.png" width="100%" alt="PenSec findings explorer for a deliberately vulnerable sample app: confirmed and suspected findings with severity, file and control">
-  </picture>
-</a>
-
-- **Honest coverage:** only PASS and FAIL are decisive; blocked, unsupported or suspected controls never count as secure.
-- **No AI-confirmed findings:** review agents can only record hypotheses, and the engine reads and redacts the cited lines itself.
-- **Wide static coverage:** secrets, injection sinks, CI/CD, containers, Terraform, Android and iOS manifests, MCP and LLM output reaching exec sinks.
-- **Reports:** HTML, Markdown, JSON, SARIF 2.1.0 and CSV, with a `--fail-on` gate for CI.
-
-[Live demo](https://ratomirjovanovic.github.io/pensec/demo/) · [Website](https://ratomirjovanovic.github.io/pensec/) · [Docs](https://github.com/ratomirjovanovic/pensec/wiki) · [Quick start](https://github.com/ratomirjovanovic/pensec#quick-start) · [Roadmap](https://github.com/ratomirjovanovic/pensec/issues)
 
 ### Payshen SDKs
 
@@ -105,7 +112,7 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img src="assets/activity-dark.svg" width="100%" alt="PandaPayLens at a glance: supported payment providers, latest release, open good first issues and license.">
+  <img src="assets/activity-dark.svg" width="100%" alt="PenSec at a glance: latest release, control domains, report formats and license.">
 </picture>
 
 <sub>This card and the review list above are generated daily from public GitHub data. My contribution activity is GitHub's own overview, below this README.</sub>
@@ -115,7 +122,8 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 | Area | Focus |
 | --- | --- |
 | Payments and fintech | PSP integrations, orchestration and routing, decline and error semantics, webhooks, settlement and reconciliation |
-| Security and GRC | ISO/IEC 27001 readiness, risk and supplier management, control evidence, secure design |
+| Application security | Static analysis and evidence-based assessment, secrets handling, CI/CD and supply chain, webhook and auth review |
+| GRC | ISO/IEC 27001 readiness, risk and supplier management, control evidence, secure design |
 | Engineering | TypeScript, Go and Python services, API clients and SDKs, testing and CI, documentation that matches the code |
 
 ### Toolbox
