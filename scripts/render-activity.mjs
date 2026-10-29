@@ -1,5 +1,5 @@
 // Renders assets/activity-dark.svg and assets/activity-light.svg: current
-// Pandaward facts from public GitHub data. Contribution counts are left to
+// PandaWard facts from public GitHub data. Contribution counts are left to
 // GitHub's own activity overview on the profile, which also counts private
 // work. Runs in GitHub Actions with the workflow token. No dependencies.
 import { mkdirSync, writeFileSync } from "node:fs";
@@ -64,11 +64,11 @@ function render(t) {
     })
     .join("");
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t d">
-  <title id="t">Pandaward at a glance</title>
+  <title id="t">PandaWard at a glance</title>
   <desc id="d">${tiles.map(([l, v, n]) => `${l}: ${v} ${n}`.trim()).join(". ")}.</desc>
   <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="12" fill="${t.bg}" stroke="${t.border}"/>
   <g ${font}>
-    <text x="32" y="42" fill="${t.fg}" font-size="15" font-weight="600">Pandaward at a glance</text>${cells}
+    <text x="32" y="42" fill="${t.fg}" font-size="15" font-weight="600">PandaWard at a glance</text>${cells}
   </g>
 </svg>
 `;
