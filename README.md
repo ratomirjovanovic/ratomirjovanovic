@@ -8,13 +8,13 @@
   <a href="https://x.com/heyratomir"><img src="https://img.shields.io/badge/@heyratomir-000000?style=flat-square&logo=x&logoColor=white" alt="X: @heyratomir"></a>
 </p>
 
-I have spent 18 years building software across SaaS, fintech and payments, much of it in regulated, audited and security-sensitive environments. Today most of my open-source time goes into [PenSec](https://github.com/ratomirjovanovic/pensec), a local application security assessment engine that keeps evidence for every finding and says plainly what it did not test. Alongside it I build payment infrastructure at Payshen, maintain tooling for payment developers and review payment, webhook and auth code in other projects.
+I have spent 18 years building software across SaaS, fintech and payments, much of it in regulated, audited and security-sensitive environments. Today most of my open-source time goes into [PandaWard](https://github.com/ratomirjovanovic/pandaward), a local application security assessment engine that keeps evidence for every finding and says plainly what it did not test. Alongside it I build payment infrastructure at Payshen, maintain tooling for payment developers and review payment, webhook and auth code in other projects.
 
 ## Now
 
 | Venture | Role and focus |
 | --- | --- |
-| **[PenSec](https://github.com/ratomirjovanovic/pensec)** | Maintainer, main open-source project. Local, evidence-based application security assessment as a Go CLI and a Claude Code plugin. |
+| **[PandaWard](https://github.com/ratomirjovanovic/pandaward)** | Maintainer, main open-source project. Local, evidence-based application security assessment as a Go CLI and a Claude Code plugin. |
 | **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
 | **[PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)** | Maintainer. Open-source, local-first payment error decoder and transaction timeline visualizer. |
 | **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
@@ -23,14 +23,14 @@ I have spent 18 years building software across SaaS, fintech and payments, much 
 
 ## Open source
 
-### [PenSec](https://github.com/ratomirjovanovic/pensec)
+### [PandaWard](https://github.com/ratomirjovanovic/pandaward)
 
-Application security assessment for your own repositories that also tells you what it did not test. Most scanners print alerts and stop; PenSec keeps a ledger of every control it could check, how it checked it and the redacted evidence, and lists every control it could not decide. Passive by default, network tests only after a person approves the scope.
+Application security assessment for your own repositories that also tells you what it did not test. Most scanners print alerts and stop; PandaWard keeps a ledger of every control it could check, how it checked it and the redacted evidence, and lists every control it could not decide. Passive by default, network tests only after a person approves the scope. Formerly PenSec, renamed in 0.2.0.
 
-<a href="https://ratomirjovanovic.github.io/pensec/demo/">
+<a href="https://ratomirjovanovic.github.io/pandaward/demo/">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ratomirjovanovic/pensec/main/docs/media/findings-dark.png">
-    <img src="https://raw.githubusercontent.com/ratomirjovanovic/pensec/main/docs/media/findings-light.png" width="100%" alt="PenSec findings explorer for a deliberately vulnerable sample app: confirmed and suspected findings with severity, file and control">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ratomirjovanovic/pandaward/main/docs/media/findings-dark.png">
+    <img src="https://raw.githubusercontent.com/ratomirjovanovic/pandaward/main/docs/media/findings-light.png" width="100%" alt="PandaWard findings explorer for a deliberately vulnerable sample app: confirmed and suspected findings with severity, file and control">
   </picture>
 </a>
 
@@ -41,12 +41,13 @@ Application security assessment for your own repositories that also tells you wh
 - **Reports and CI:** HTML, Markdown, JSON, SARIF 2.1.0 and CSV, with a `--fail-on` gate. Release binaries are reproducible, with checksums, an SBOM and signed provenance.
 
 ```text
-/plugin marketplace add ratomirjovanovic/pensec
-/plugin install pensec@pensec
-/pensec:scan
+/plugin marketplace add ratomirjovanovic/pandaward
+/plugin install pandaward@pandaward            # macOS and Linux
+/plugin install pandaward-windows@pandaward    # Windows
+/pandaward:scan
 ```
 
-[Live demo](https://ratomirjovanovic.github.io/pensec/demo/) · [Website](https://ratomirjovanovic.github.io/pensec/) · [Docs](https://github.com/ratomirjovanovic/pensec/wiki) · [Quick start](https://github.com/ratomirjovanovic/pensec#quick-start) · [Releases](https://github.com/ratomirjovanovic/pensec/releases) · [Roadmap](https://github.com/ratomirjovanovic/pensec#roadmap)
+[Live demo](https://ratomirjovanovic.github.io/pandaward/demo/) · [Website](https://ratomirjovanovic.github.io/pandaward/) · [Docs](https://github.com/ratomirjovanovic/pandaward/wiki) · [Quick start](https://github.com/ratomirjovanovic/pandaward#quick-start) · [Releases](https://github.com/ratomirjovanovic/pandaward/releases) · [Roadmap](https://github.com/ratomirjovanovic/pandaward#roadmap)
 
 ### [PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)
 
@@ -116,7 +117,7 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img src="assets/activity-dark.svg" width="100%" alt="PenSec at a glance: latest release, control domains, report formats and license.">
+  <img src="assets/activity-dark.svg" width="100%" alt="PandaWard at a glance: latest release, control domains, report formats and license.">
 </picture>
 
 <sub>This card and the review list above are generated daily from public GitHub data. My contribution activity is GitHub's own overview, below this README.</sub>
