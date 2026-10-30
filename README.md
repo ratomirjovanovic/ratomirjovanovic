@@ -115,6 +115,15 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 | [supabase/ssr](https://github.com/supabase/ssr) | [#209](https://github.com/supabase/ssr/issues/209) tsconfig.json: outDir without rootDir triggers TS6059 / migration warning whe... | Fixed |
 <!-- issues:end -->
 
+### Contributions to other projects
+
+Fixes I wrote for other projects that their maintainers merged.
+
+| Project | Pull request | Merged |
+| --- | --- | --- |
+| [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2768](https://github.com/svix/svix-webhooks/pull/2768) php: fix Webhook::fromRaw | 2026-10-30 |
+| [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2765](https://github.com/svix/svix-webhooks/pull/2765) php: reject an empty or non-base64 webhook secret | 2026-10-29 |
+
 ## Project facts
 
 <picture>
