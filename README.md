@@ -84,8 +84,8 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
-| [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#348](https://github.com/standard-webhooks/standard-webhooks/pull/348) Sign binary payloads byte for byte (JavaScript, Python) | Merged after revision |
 | [paypal/paypal-js](https://github.com/paypal/paypal-js) | [#1100](https://github.com/paypal/paypal-js/pull/1100) fix(paypal-js): only reuse a pending v6 script for the same namespace | Revised after review |
+| [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#348](https://github.com/standard-webhooks/standard-webhooks/pull/348) Sign binary payloads byte for byte (JavaScript, Python) | Merged after revision |
 | [modelcontextprotocol/go-sdk](https://github.com/modelcontextprotocol/go-sdk) | [#1451](https://github.com/modelcontextprotocol/go-sdk/pull/1451) auth/extauth: send resource in client credentials token requests | Merged after revision |
 | [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1829](https://github.com/juspay/hyperswitch-web/pull/1829) fix: preserve 3DS messages before closing fullscreen frames | Merged |
 | [DataDog/dd-trace-js](https://github.com/DataDog/dd-trace-js) | [#10932](https://github.com/DataDog/dd-trace-js/pull/10932) fix(appsec): wrap shared Stripe webhooks methods only once | Open |
@@ -105,13 +105,13 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 <!-- issues:start -->
 | Project | Issue | Status |
 | --- | --- | --- |
+| [go-pay/gopay](https://github.com/go-pay/gopay) | [#558](https://github.com/go-pay/gopay/issues/558) Is there a private way to report a security issue? | Open |
+| [payloadcms/payload](https://github.com/payloadcms/payload) | [#19055](https://github.com/payloadcms/payload/issues/19055) plugin-ecommerce: restore the Stripe cart drift check with a metadata digest,... | Open |
 | [getlago/lago](https://github.com/getlago/lago) | [#842](https://github.com/getlago/lago/issues/842) \[BUG\]: No private way to report a security issue on GitHub | Open |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2763](https://github.com/svix/svix-webhooks/issues/2763) php: Webhook accepts an empty or non-base64 secret and verifies with an empty... | Fixed |
 | [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816) \[Bug\]: HmacValidator accepts a malformed HMAC key as an empty key | Open |
 | [golang/go](https://github.com/golang/go) | [#82658](https://github.com/golang/go/issues/82658) x/oauth2: DeviceAccessToken panics on a negative or very large interval | Open |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17544](https://github.com/medusajs/medusa/issues/17544) \[Bug\]: Payment providers removed from config are never disabled in payment_pr... | Fixed |
-| [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1831](https://github.com/juspay/hyperswitch-web/issues/1831) 3DS authentication: a failed auth call falls through to the frictionless submit | Open |
-| [payloadcms/payload](https://github.com/payloadcms/payload) | [#19055](https://github.com/payloadcms/payload/issues/19055) plugin-ecommerce: restore the Stripe cart drift check with a metadata digest,... | Open |
 | [supabase/ssr](https://github.com/supabase/ssr) | [#209](https://github.com/supabase/ssr/issues/209) tsconfig.json: outDir without rootDir triggers TS6059 / migration warning whe... | Fixed |
 <!-- issues:end -->
 
