@@ -121,8 +121,13 @@ Fixes I wrote for other projects that their maintainers merged.
 
 | Project | Pull request | Merged |
 | --- | --- | --- |
+| [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1817](https://github.com/Adyen/adyen-node-api-library/pull/1817) fix(hmac): reject malformed HMAC keys and compare signatures exactly | 2026-11-03 |
+| [Adyen/adyen-dotnet-api-library](https://github.com/Adyen/adyen-dotnet-api-library) | [#1899](https://github.com/Adyen/adyen-dotnet-api-library/pull/1899) fix(hmac): reject an empty HMAC key | 2026-11-03 |
+| [Adyen/adyen-java-api-library](https://github.com/Adyen/adyen-java-api-library) | [#2100](https://github.com/Adyen/adyen-java-api-library/pull/2100) fix(hmac): don't include the HMAC key in the invalid key exception | 2026-11-03 |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2768](https://github.com/svix/svix-webhooks/pull/2768) php: fix Webhook::fromRaw | 2026-10-30 |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2765](https://github.com/svix/svix-webhooks/pull/2765) php: reject an empty or non-base64 webhook secret | 2026-10-29 |
+
+<sub>The Adyen fixes follow [#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816), an HMAC validation issue I reported and Adyen confirmed. Related fixes for the PHP, Python, Go and Ruby libraries are in review.</sub>
 
 ## Project facts
 
