@@ -18,6 +18,20 @@ I have spent 18 years building software across SaaS, fintech and payments, much 
 | **[AMIO](https://getamio.com)** | Founder and Managing Director. Buy now, pay later: connects shoppers, merchants and financing partners so paying in instalments is simple and the terms are clear from the start. |
 | **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
 
+## Highlights
+
+Work in other projects that their maintainers merged or changed because of it.
+
+| Project | What happened |
+| --- | --- |
+| **Adyen** | Reported that the Node HMAC validator accepted a malformed key as an empty one ([#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816)). Adyen confirmed it and asked for fixes across its SDKs: merged in [Node](https://github.com/Adyen/adyen-node-api-library/pull/1817), [Java](https://github.com/Adyen/adyen-java-api-library/pull/2100) and [.NET](https://github.com/Adyen/adyen-dotnet-api-library/pull/1899); PHP, Python, Go and Ruby in review. |
+| **Svix** | Two PHP webhook fixes merged: empty or non-base64 secrets are rejected ([#2765](https://github.com/svix/svix-webhooks/pull/2765)) and `Webhook::fromRaw` works again ([#2768](https://github.com/svix/svix-webhooks/pull/2768)). |
+| **Twilio** | Review of HMAC-SHA256 webhook support in twilio-node ([#1226](https://github.com/twilio/twilio-node/pull/1226)): the Express middleware still checked SHA-1 only; Twilio fixed it in the PR. |
+| **Razorpay** | Review of razorpay-node [#492](https://github.com/razorpay/razorpay-node/pull/492): network errors would have carried the API key secret into application logs; fixed in the PR with tests. |
+| **PayPal** | Review of paypal-js [#1100](https://github.com/paypal/paypal-js/pull/1100) on v6 script reuse across namespaces; adopted in the PR. |
+| **Standard Webhooks** | Review of binary payload signing ([#348](https://github.com/standard-webhooks/standard-webhooks/pull/348)); merged with the `memoryview` fix the review asked for. |
+| **Model Context Protocol** | Review of the Go SDK client credentials flow ([#1451](https://github.com/modelcontextprotocol/go-sdk/pull/1451)); merged after revision. |
+
 ## Open source
 
 ### [PandaWard](https://github.com/ratomirjovanovic/pandaward)
