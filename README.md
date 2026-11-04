@@ -70,7 +70,7 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 <a href="https://packagist.org/packages/payshen/payshen-php"><img src="https://img.shields.io/packagist/v/payshen/payshen-php?style=flat-square&label=Packagist" alt="Packagist payshen/payshen-php"></a>
 <a href="https://wordpress.org/plugins/payshen-for-woocommerce/"><img src="https://img.shields.io/wordpress/plugin/v/payshen-for-woocommerce?style=flat-square&label=WordPress.org" alt="WordPress.org plugin"></a>
 
-[PHP](https://github.com/meetsodasoft/payshen-php) · [Python](https://github.com/meetsodasoft/payshen-python) · [WooCommerce](https://github.com/meetsodasoft/payshen-woocommerce)
+[Node.js on npm](https://www.npmjs.com/package/@payshen/sdk) · [Python on PyPI](https://pypi.org/project/payshen/) · [PHP on Packagist](https://packagist.org/packages/payshen/payshen-php) · [WooCommerce on WordPress.org](https://wordpress.org/plugins/payshen-for-woocommerce/)
 
 ### Code reviews in other projects
 
