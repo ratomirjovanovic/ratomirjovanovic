@@ -14,12 +14,9 @@ I have spent 18 years building software across SaaS, fintech and payments, much 
 
 | Venture | Role and focus |
 | --- | --- |
-| **[PandaWard](https://github.com/ratomirjovanovic/pandaward)** | Maintainer, main open-source project. Local, evidence-based application security assessment as a Go CLI and a Claude Code plugin. |
 | **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
-| **[PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)** | Maintainer. Open-source, local-first payment error decoder and transaction timeline visualizer. |
+| **[AMIO](https://getamio.com)** | Founder and Managing Director. Buy now, pay later: connects shoppers, merchants and financing partners so paying in instalments is simple and the terms are clear from the start. |
 | **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
-| **[Nanotesting](https://nanotesting.com)** | Founder. Automated security assessment for websites, APIs and repositories. |
-| **[SodaSoft](https://sodasoft.com)** | Founder. Venture studio for software products: design, engineering and launch. |
 
 ## Open source
 
@@ -73,7 +70,7 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 <a href="https://packagist.org/packages/payshen/payshen-php"><img src="https://img.shields.io/packagist/v/payshen/payshen-php?style=flat-square&label=Packagist" alt="Packagist payshen/payshen-php"></a>
 <a href="https://wordpress.org/plugins/payshen-for-woocommerce/"><img src="https://img.shields.io/wordpress/plugin/v/payshen-for-woocommerce?style=flat-square&label=WordPress.org" alt="WordPress.org plugin"></a>
 
-[PHP](https://github.com/meetsodasoft/payshen-php) · [Python](https://github.com/meetsodasoft/payshen-python) · [WooCommerce](https://github.com/meetsodasoft/payshen-woocommerce)
+[Node.js on npm](https://www.npmjs.com/package/@payshen/sdk) · [Python on PyPI](https://pypi.org/project/payshen/) · [PHP on Packagist](https://packagist.org/packages/payshen/payshen-php) · [WooCommerce on WordPress.org](https://wordpress.org/plugins/payshen-for-woocommerce/)
 
 ### Code reviews in other projects
 
