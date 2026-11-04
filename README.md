@@ -14,10 +14,8 @@ I have spent 18 years building software across SaaS, fintech and payments, much 
 
 | Venture | Role and focus |
 | --- | --- |
-| **[PandaWard](https://github.com/ratomirjovanovic/pandaward)** | Maintainer, main open-source project. Local, evidence-based application security assessment as a Go CLI and a Claude Code plugin. |
 | **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
 | **[AMIO](https://getamio.com)** | Founder and Managing Director. Buy now, pay later: connects shoppers, merchants and financing partners so paying in instalments is simple and the terms are clear from the start. |
-| **[PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens)** | Maintainer. Open-source, local-first payment error decoder and transaction timeline visualizer. |
 | **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
 
 ## Open source
