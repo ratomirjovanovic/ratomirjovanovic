@@ -80,11 +80,14 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 Recent public reviews, mostly payment, webhook and security changes. The last column shows what GitHub recorded after the review: whether the author pushed changes, whether I approved, and whether the pull request was merged.
 
 <!-- reviews:start -->
-<sub>20 pull requests in 16 projects · 9 revised by their authors after the review · 7 merged</sub>
+<sub>22 pull requests in 17 projects · 10 revised by their authors after the review · 7 merged</sub>
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
+| [razorpay/razorpay-node](https://github.com/razorpay/razorpay-node) | [#492](https://github.com/razorpay/razorpay-node/pull/492) Preserve network errors when the API does not respond | Revised, then approved |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12049](https://github.com/better-auth/better-auth/pull/12049) fix(account): share and guard concurrent provider token refreshes | Revised after review |
+| [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2732](https://github.com/svix/svix-webhooks/pull/2732) fix(php,ruby): fallback to case-insensitive header lookup in webhook verify | Open |
+| [twilio/twilio-node](https://github.com/twilio/twilio-node) | [#1226](https://github.com/twilio/twilio-node/pull/1226) chore: support HMAC-SHA256 webhook signatures in validateRequest | Open |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12014](https://github.com/better-auth/better-auth/pull/12014) fix(stripe): refetch subscription in subscription webhooks | Closed |
 | [DataDog/dd-trace-js](https://github.com/DataDog/dd-trace-js) | [#10932](https://github.com/DataDog/dd-trace-js/pull/10932) fix(appsec): wrap shared Stripe webhooks methods only once | Closed |
 | [paypal/paypal-js](https://github.com/paypal/paypal-js) | [#1100](https://github.com/paypal/paypal-js/pull/1100) fix(paypal-js): only reuse a pending v6 script for the same namespace | Revised after review |
@@ -93,9 +96,6 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 | [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1829](https://github.com/juspay/hyperswitch-web/pull/1829) fix: preserve 3DS messages before closing fullscreen frames | Merged |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17538](https://github.com/medusajs/medusa/pull/17538) fix(medusa): reject webhooks for nonexistent providers | Merged |
 | [payloadcms/payload](https://github.com/payloadcms/payload) | [#19024](https://github.com/payloadcms/payload/pull/19024) fix(plugin-ecommerce): drop cart items from Stripe payment intent metadata | Closed |
-| [Adyen/adyen-web](https://github.com/Adyen/adyen-web) | [#4273](https://github.com/Adyen/adyen-web/pull/4273) Fix/prevent duplicate 3DS2 challenge completion | Merged after revision |
-| [anthropics/anthropic-sdk-typescript](https://github.com/anthropics/anthropic-sdk-typescript) | [#1284](https://github.com/anthropics/anthropic-sdk-typescript/pull/1284) fix(client): keep the abort listener while the Response is held | Open |
-| [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | [#1123](https://github.com/mark3labs/mcp-go/pull/1123) fix(oauth): refresh an access token shortly before it expires | Open |
 <!-- reviews:end -->
 
 ### Issues raised in other projects
@@ -105,6 +105,7 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 <!-- issues:start -->
 | Project | Issue | Status |
 | --- | --- | --- |
+| [cashfree/cashfree-pg-sdk-nodejs](https://github.com/cashfree/cashfree-pg-sdk-nodejs) | [#133](https://github.com/cashfree/cashfree-pg-sdk-nodejs/issues/133) PGVerifyWebhookSignature never checks x-webhook-timestamp, so an old webhook... | Open |
 | [go-pay/gopay](https://github.com/go-pay/gopay) | [#558](https://github.com/go-pay/gopay/issues/558) Is there a private way to report a security issue? | Open |
 | [payloadcms/payload](https://github.com/payloadcms/payload) | [#19055](https://github.com/payloadcms/payload/issues/19055) plugin-ecommerce: restore the Stripe cart drift check with a metadata digest,... | Open |
 | [getlago/lago](https://github.com/getlago/lago) | [#842](https://github.com/getlago/lago/issues/842) \[BUG\]: No private way to report a security issue on GitHub | Open |
