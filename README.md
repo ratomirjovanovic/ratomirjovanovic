@@ -92,10 +92,11 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 Recent public reviews, mostly payment, webhook and security changes. The last column shows what GitHub recorded after the review: whether the author pushed changes, whether I approved, and whether the pull request was merged.
 
 <!-- reviews:start -->
-<sub>22 pull requests in 17 projects · 12 revised by their authors after the review · 8 merged</sub>
+<sub>23 pull requests in 18 projects · 12 revised by their authors after the review · 8 merged</sub>
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
+| [googleapis/go-genai](https://github.com/googleapis/go-genai) | [#1024](https://github.com/googleapis/go-genai/pull/1024) fix: strip the API key from a redirect to another domain | Open |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12049](https://github.com/better-auth/better-auth/pull/12049) fix(account): share and guard concurrent provider token refreshes | Revised after review |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2732](https://github.com/svix/svix-webhooks/pull/2732) fix(php,ruby): fallback to case-insensitive header lookup in webhook verify | Revised after review |
 | [twilio/twilio-node](https://github.com/twilio/twilio-node) | [#1226](https://github.com/twilio/twilio-node/pull/1226) chore: support HMAC-SHA256 webhook signatures in validateRequest | Merged after revision |
@@ -107,7 +108,6 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 | [modelcontextprotocol/go-sdk](https://github.com/modelcontextprotocol/go-sdk) | [#1451](https://github.com/modelcontextprotocol/go-sdk/pull/1451) auth/extauth: send resource in client credentials token requests | Merged after revision |
 | [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1829](https://github.com/juspay/hyperswitch-web/pull/1829) fix: preserve 3DS messages before closing fullscreen frames | Merged |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17538](https://github.com/medusajs/medusa/pull/17538) fix(medusa): reject webhooks for nonexistent providers | Merged |
-| [payloadcms/payload](https://github.com/payloadcms/payload) | [#19024](https://github.com/payloadcms/payload/pull/19024) fix(plugin-ecommerce): drop cart items from Stripe payment intent metadata | Closed |
 <!-- reviews:end -->
 
 ### Issues raised in other projects
