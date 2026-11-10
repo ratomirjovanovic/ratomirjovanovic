@@ -93,10 +93,11 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 Recent public reviews, mostly payment, webhook and security changes. The last column shows what GitHub recorded after the review: whether the author pushed changes, whether I approved, and whether the pull request was merged.
 
 <!-- reviews:start -->
-<sub>23 pull requests in 18 projects · 13 revised by their authors after the review · 8 merged</sub>
+<sub>23 pull requests in 18 projects · 14 revised by their authors after the review · 8 merged</sub>
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
+| [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | [#1123](https://github.com/mark3labs/mcp-go/pull/1123) fix(oauth): refresh an access token shortly before it expires | Revised after review |
 | [googleapis/go-genai](https://github.com/googleapis/go-genai) | [#1024](https://github.com/googleapis/go-genai/pull/1024) fix: strip the API key from a redirect to another domain | Revised, then approved |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12049](https://github.com/better-auth/better-auth/pull/12049) fix(account): share and guard concurrent provider token refreshes | Revised after review |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2732](https://github.com/svix/svix-webhooks/pull/2732) fix(php,ruby): fallback to case-insensitive header lookup in webhook verify | Revised after review |
@@ -108,7 +109,6 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 | [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#348](https://github.com/standard-webhooks/standard-webhooks/pull/348) Sign binary payloads byte for byte (JavaScript, Python) | Merged after revision |
 | [modelcontextprotocol/go-sdk](https://github.com/modelcontextprotocol/go-sdk) | [#1451](https://github.com/modelcontextprotocol/go-sdk/pull/1451) auth/extauth: send resource in client credentials token requests | Merged after revision |
 | [juspay/hyperswitch-web](https://github.com/juspay/hyperswitch-web) | [#1829](https://github.com/juspay/hyperswitch-web/pull/1829) fix: preserve 3DS messages before closing fullscreen frames | Merged |
-| [medusajs/medusa](https://github.com/medusajs/medusa) | [#17538](https://github.com/medusajs/medusa/pull/17538) fix(medusa): reject webhooks for nonexistent providers | Merged |
 <!-- reviews:end -->
 
 ### Issues raised in other projects
