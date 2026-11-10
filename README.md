@@ -159,13 +159,13 @@ Fixes I wrote for other projects that their maintainers merged.
 | Payments and fintech | PSP integrations, orchestration and routing, decline and error semantics, webhooks, settlement and reconciliation |
 | Application security | Static analysis and evidence-based assessment, secrets handling, CI/CD and supply chain, webhook and auth review |
 | GRC | ISO/IEC 27001 readiness, risk and supplier management, control evidence, secure design |
-| Engineering | TypeScript, Go and Python services, API clients and SDKs, testing and CI, documentation that matches the code |
+| Engineering | TypeScript, Go, Python and Rust: services, API clients and SDKs, testing and CI, documentation that matches the code |
 
 ### Toolbox
 
 | Area | Tools |
 | --- | --- |
-| **Languages** | <img src="https://skillicons.dev/icons?i=go,ts,js,py,php,dart,kotlin" height="40" alt="Go, TypeScript, JavaScript, Python, PHP, Dart, Kotlin"> |
+| **Languages** | <img src="https://skillicons.dev/icons?i=go,ts,js,py,rust,php,dart,kotlin" height="40" alt="Go, TypeScript, JavaScript, Python, Rust, PHP, Dart, Kotlin"> |
 | **Frameworks** | <img src="https://skillicons.dev/icons?i=nodejs,react,nextjs,tailwind,laravel,flutter" height="40" alt="Node.js, React, Next.js, Tailwind CSS, Laravel, Flutter"> |
 | **Data and cloud** | <img src="https://skillicons.dev/icons?i=postgres,vercel,aws,gcp" height="40" alt="PostgreSQL, Vercel, AWS, Google Cloud"> <img src="https://img.shields.io/badge/Neon-00E599?style=flat-square&logo=neon&logoColor=black" height="28" alt="Neon serverless Postgres"> |
 | **Delivery** | <img src="https://skillicons.dev/icons?i=docker,githubactions,git,bash" height="40" alt="Docker, GitHub Actions, Git, Bash"> |
