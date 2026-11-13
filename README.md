@@ -31,7 +31,7 @@ Work in other projects that their maintainers merged or changed because of it.
 | **Twilio** | Review of HMAC-SHA256 webhook support in twilio-node ([#1226](https://github.com/twilio/twilio-node/pull/1226)): the Express middleware still checked SHA-1 only; Twilio fixed it in the PR and merged it. |
 | **Razorpay** | Review of razorpay-node [#492](https://github.com/razorpay/razorpay-node/pull/492): network errors would have carried the API key secret into application logs; fixed in the PR with tests. |
 | **PayPal** | Review of paypal-js [#1100](https://github.com/paypal/paypal-js/pull/1100) on v6 script reuse across namespaces; adopted in the PR. |
-| **Standard Webhooks** | Review of binary payload signing ([#348](https://github.com/standard-webhooks/standard-webhooks/pull/348)); merged with the `memoryview` fix the review asked for. |
+| **Standard Webhooks** | Fixed the PHP `Webhook::fromRaw()`, which always threw after the empty secret check was added ([#354](https://github.com/standard-webhooks/standard-webhooks/pull/354), merged). Also reviewed binary payload signing ([#348](https://github.com/standard-webhooks/standard-webhooks/pull/348)); merged with the `memoryview` fix the review asked for. |
 | **Model Context Protocol** | Review of the Go SDK client credentials flow ([#1451](https://github.com/modelcontextprotocol/go-sdk/pull/1451)); merged after revision. |
 
 ## Open source
@@ -136,6 +136,7 @@ Fixes I wrote for other projects that their maintainers merged.
 
 | Project | Pull request | Merged |
 | --- | --- | --- |
+| [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#354](https://github.com/standard-webhooks/standard-webhooks/pull/354) php: fix Webhook::fromRaw() after the empty secret check | 2026-11-13 |
 | [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1817](https://github.com/Adyen/adyen-node-api-library/pull/1817) fix(hmac): reject malformed HMAC keys and compare signatures exactly | 2026-11-03 |
 | [Adyen/adyen-dotnet-api-library](https://github.com/Adyen/adyen-dotnet-api-library) | [#1899](https://github.com/Adyen/adyen-dotnet-api-library/pull/1899) fix(hmac): reject an empty HMAC key | 2026-11-03 |
 | [Adyen/adyen-java-api-library](https://github.com/Adyen/adyen-java-api-library) | [#2100](https://github.com/Adyen/adyen-java-api-library/pull/2100) fix(hmac): don't include the HMAC key in the invalid key exception | 2026-11-03 |
