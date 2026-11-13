@@ -93,10 +93,11 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 Recent public reviews, mostly payment, webhook and security changes. The last column shows what GitHub recorded after the review: whether the author pushed changes, whether I approved, and whether the pull request was merged.
 
 <!-- reviews:start -->
-<sub>23 pull requests in 18 projects · 15 revised by their authors after the review · 9 merged</sub>
+<sub>24 pull requests in 19 projects · 15 revised by their authors after the review · 9 merged</sub>
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
+| [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1450](https://github.com/modelcontextprotocol/rust-sdk/pull/1450) fix(auth): avoid refreshing short-lived access tokens on every call | Approved |
 | [razorpay/razorpay-node](https://github.com/razorpay/razorpay-node) | [#492](https://github.com/razorpay/razorpay-node/pull/492) Preserve network errors when the API does not respond | Revised, then approved |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17489](https://github.com/medusajs/medusa/pull/17489) fix(payment): recompute refunded amount when a refund fails at the provider | Merged after revision |
 | [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | [#1123](https://github.com/mark3labs/mcp-go/pull/1123) fix(oauth): refresh an access token shortly before it expires | Revised, then approved |
@@ -108,7 +109,6 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 | [DataDog/dd-trace-js](https://github.com/DataDog/dd-trace-js) | [#10932](https://github.com/DataDog/dd-trace-js/pull/10932) fix(appsec): wrap shared Stripe webhooks methods only once | Closed |
 | [paypal/paypal-js](https://github.com/paypal/paypal-js) | [#1100](https://github.com/paypal/paypal-js/pull/1100) fix(paypal-js): only reuse a pending v6 script for the same namespace | Revised after review |
 | [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#348](https://github.com/standard-webhooks/standard-webhooks/pull/348) Sign binary payloads byte for byte (JavaScript, Python) | Merged after revision |
-| [modelcontextprotocol/go-sdk](https://github.com/modelcontextprotocol/go-sdk) | [#1451](https://github.com/modelcontextprotocol/go-sdk/pull/1451) auth/extauth: send resource in client credentials token requests | Merged after revision |
 <!-- reviews:end -->
 
 ### Issues raised in other projects
