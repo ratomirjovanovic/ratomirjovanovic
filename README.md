@@ -4,6 +4,7 @@
 </picture>
 
 <p>
+  <a href="https://ratomir.com"><img src="https://img.shields.io/badge/ratomir.com-111111?style=flat-square&logo=googlechrome&logoColor=white" alt="Website: ratomir.com"></a>
   <a href="https://linkedin.com/in/ratomir"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://x.com/heyratomir"><img src="https://img.shields.io/badge/@heyratomir-000000?style=flat-square&logo=x&logoColor=white" alt="X: @heyratomir"></a>
 </p>
@@ -17,6 +18,8 @@ I have spent 18 years building software across SaaS, fintech and payments, much 
 | **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
 | **[AMIO](https://getamio.com)** | Founder and Managing Director. Buy now, pay later: connects shoppers, merchants and financing partners so paying in instalments is simple and the terms are clear from the start. |
 | **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
+| **[Nordon](https://nordon.ai)** | Founder. AI copilot for interviews, sales and live calls: it listens to the call and shows what to say in seconds, sourced from your CV and documents, with no bot joining the meeting. |
+| **[Decot](https://decot.io)** | Product Strategist Advisor. |
 
 ## Highlights
 
