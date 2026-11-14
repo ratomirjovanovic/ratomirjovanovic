@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img src="assets/header-dark.svg" width="100%" alt="Ratomir Jovanovic. Product leader for payments and fintech infrastructure, founder of Payshen. 18 years across SaaS, fintech and payments.">
+  <img src="assets/header-dark.svg" width="100%" alt="Ratomir Jovanovic. Product leader for payments and fintech infrastructure, CPO at Payshen. 18 years across SaaS, fintech and payments.">
 </picture>
 
 <p>
@@ -15,10 +15,10 @@ I am a product leader for payments and fintech infrastructure. I have spent 18 y
 
 | Focus | What it is |
 | --- | --- |
-| **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
+| **[Payshen](https://www.payshen.com)** | Chief Product Officer. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
 | **Open source** | Security fixes and reviews in payment, webhook and auth libraries, plus [PandaWard](https://github.com/ratomirjovanovic/pandaward) and [PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens). Full record at [ratomir.com/open-source](https://ratomir.com/open-source). |
 
-<sub>Advisory: [Decot](https://decot.io) (product strategy). Open to Head of Product, Director of Product and CPO roles in payments and fintech infrastructure: [ratomir.com](https://ratomir.com).</sub>
+<sub>Advisory: [Decot](https://decot.io) (Product Strategy Advisor). Open to Head of Product, Director of Product and CPO roles in payments and fintech infrastructure: [ratomir.com](https://ratomir.com).</sub>
 
 ## Highlights
 
