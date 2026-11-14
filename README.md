@@ -95,11 +95,12 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 Recent public reviews, mostly payment, webhook and security changes. The last column shows what GitHub recorded after the review: whether the author pushed changes, whether I approved, and whether the pull request was merged.
 
 <!-- reviews:start -->
-<sub>24 pull requests in 19 projects · 15 revised by their authors after the review · 9 merged</sub>
+<sub>25 pull requests in 20 projects · 16 revised by their authors after the review · 9 merged</sub>
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
-| [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1450](https://github.com/modelcontextprotocol/rust-sdk/pull/1450) fix(auth): avoid refreshing short-lived access tokens on every call | Approved |
+| [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1450](https://github.com/modelcontextprotocol/rust-sdk/pull/1450) fix(auth): avoid refreshing short-lived access tokens on every call | Revised, then approved |
+| [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | [#15106](https://github.com/juspay/hyperswitch/pull/15106) fix(connector): \[SANTANDER\] bypass webhook mTLS source verification | Open |
 | [razorpay/razorpay-node](https://github.com/razorpay/razorpay-node) | [#492](https://github.com/razorpay/razorpay-node/pull/492) Preserve network errors when the API does not respond | Revised, then approved |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17489](https://github.com/medusajs/medusa/pull/17489) fix(payment): recompute refunded amount when a refund fails at the provider | Merged after revision |
 | [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | [#1123](https://github.com/mark3labs/mcp-go/pull/1123) fix(oauth): refresh an access token shortly before it expires | Revised, then approved |
@@ -110,7 +111,6 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12014](https://github.com/better-auth/better-auth/pull/12014) fix(stripe): refetch subscription in subscription webhooks | Closed |
 | [DataDog/dd-trace-js](https://github.com/DataDog/dd-trace-js) | [#10932](https://github.com/DataDog/dd-trace-js/pull/10932) fix(appsec): wrap shared Stripe webhooks methods only once | Closed |
 | [paypal/paypal-js](https://github.com/paypal/paypal-js) | [#1100](https://github.com/paypal/paypal-js/pull/1100) fix(paypal-js): only reuse a pending v6 script for the same namespace | Revised after review |
-| [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#348](https://github.com/standard-webhooks/standard-webhooks/pull/348) Sign binary payloads byte for byte (JavaScript, Python) | Merged after revision |
 <!-- reviews:end -->
 
 ### Issues raised in other projects
@@ -120,6 +120,9 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 <!-- issues:start -->
 | Project | Issue | Status |
 | --- | --- | --- |
+| [mercadopago/sdk-nodejs](https://github.com/mercadopago/sdk-nodejs) | [#492](https://github.com/mercadopago/sdk-nodejs/issues/492) \[BUG\]: toleranceSeconds rejects every Orders API notification (ts in millisec... | Open |
+| [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2928](https://github.com/stripe/stripe-node/issues/2928) constructEvent throws RangeError or a generic Error for a malformed v1 value... | Open |
+| [stripe/stripe-python](https://github.com/stripe/stripe-python) | [#1991](https://github.com/stripe/stripe-python/issues/1991) WebhookSignature.verify_header raises TypeError for a non-ASCII v1 signature | Open |
 | [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1442](https://github.com/modelcontextprotocol/rust-sdk/issues/1442) auth: tokens that live 30s or less are refreshed on every request | Open |
 | [golang/go](https://github.com/golang/go) | [#82658](https://github.com/golang/go/issues/82658) x/oauth2: DeviceAccessToken panics on a negative or very large interval | Fixed |
 | [go-pay/gopay](https://github.com/go-pay/gopay) | [#558](https://github.com/go-pay/gopay/issues/558) Is there a private way to report a security issue? | Open |
