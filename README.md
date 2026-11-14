@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg">
-  <img src="assets/header-dark.svg" width="100%" alt="Ratomir Jovanovic. Payments and security engineering, founder of Payshen. 18 years across SaaS, fintech and payments.">
+  <img src="assets/header-dark.svg" width="100%" alt="Ratomir Jovanovic. Product leader for payments and fintech infrastructure, founder of Payshen. 18 years across SaaS, fintech and payments.">
 </picture>
 
 <p>
@@ -9,17 +9,16 @@
   <a href="https://x.com/heyratomir"><img src="https://img.shields.io/badge/@heyratomir-000000?style=flat-square&logo=x&logoColor=white" alt="X: @heyratomir"></a>
 </p>
 
-I have spent 18 years building software across SaaS, fintech and payments, much of it in regulated, audited and security-sensitive environments. Today most of my open-source time goes into [PandaWard](https://github.com/ratomirjovanovic/pandaward), a local application security assessment engine that keeps evidence for every finding and says plainly what it did not test. Alongside it I build payment infrastructure at Payshen, maintain tooling for payment developers and review payment, webhook and auth code in other projects.
+I am a product leader for payments and fintech infrastructure. I have spent 18 years building software across SaaS, fintech and payments, much of it in regulated, audited and security-sensitive environments. Today most of my open-source time goes into [PandaWard](https://github.com/ratomirjovanovic/pandaward), a local application security assessment engine that keeps evidence for every finding and says plainly what it did not test. Alongside it I build payment infrastructure at Payshen, maintain tooling for payment developers and review payment, webhook and auth code in other projects.
 
 ## Now
 
-| Venture | Role and focus |
+| Focus | What it is |
 | --- | --- |
 | **[Payshen](https://www.payshen.com)** | Founder and Managing Director. Payment orchestration: every provider through one integration, each payment routed to the provider most likely to approve it, retried elsewhere only when that is safe, with the reason recorded. |
-| **[AMIO](https://getamio.com)** | Founder and Managing Director. Buy now, pay later: connects shoppers, merchants and financing partners so paying in instalments is simple and the terms are clear from the start. |
-| **[afend](https://afend.com)** | Founder. Guided ISO/IEC 27001:2022 readiness, from risk register to an auditor-ready handoff. |
-| **[Nordon](https://nordon.ai)** | Founder. AI copilot for interviews, sales and live calls: it listens to the call and shows what to say in seconds, sourced from your CV and documents, with no bot joining the meeting. |
-| **[Decot](https://decot.io)** | Product Strategist Advisor. |
+| **Open source** | Security fixes and reviews in payment, webhook and auth libraries, plus [PandaWard](https://github.com/ratomirjovanovic/pandaward) and [PandaPayLens](https://github.com/ratomirjovanovic/PandaPayLens). Full record at [ratomir.com/open-source](https://ratomir.com/open-source). |
+
+<sub>Advisory: [Decot](https://decot.io) (product strategy). Open to Head of Product, Director of Product and CPO roles in payments and fintech infrastructure: [ratomir.com](https://ratomir.com).</sub>
 
 ## Highlights
 
