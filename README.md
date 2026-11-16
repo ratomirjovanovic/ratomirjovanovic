@@ -99,11 +99,11 @@ Recent public reviews, mostly payment, webhook and security changes. The last co
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
+| [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | [#1123](https://github.com/mark3labs/mcp-go/pull/1123) fix(oauth): refresh an access token shortly before it expires | Revised, then approved |
 | [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1450](https://github.com/modelcontextprotocol/rust-sdk/pull/1450) fix(auth): avoid refreshing short-lived access tokens on every call | Revised, then approved |
-| [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | [#15106](https://github.com/juspay/hyperswitch/pull/15106) fix(connector): \[SANTANDER\] bypass webhook mTLS source verification | Open |
+| [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | [#15106](https://github.com/juspay/hyperswitch/pull/15106) fix(connector): \[SANTANDER\] bypass webhook mTLS source verification | Closed |
 | [razorpay/razorpay-node](https://github.com/razorpay/razorpay-node) | [#492](https://github.com/razorpay/razorpay-node/pull/492) Preserve network errors when the API does not respond | Revised, then approved |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17489](https://github.com/medusajs/medusa/pull/17489) fix(payment): recompute refunded amount when a refund fails at the provider | Merged after revision |
-| [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | [#1123](https://github.com/mark3labs/mcp-go/pull/1123) fix(oauth): refresh an access token shortly before it expires | Revised, then approved |
 | [googleapis/go-genai](https://github.com/googleapis/go-genai) | [#1024](https://github.com/googleapis/go-genai/pull/1024) fix: strip the API key from a redirect to another domain | Revised, then approved |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12049](https://github.com/better-auth/better-auth/pull/12049) fix(account): share and guard concurrent provider token refreshes | Revised after review |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2732](https://github.com/svix/svix-webhooks/pull/2732) fix(php,ruby): fallback to case-insensitive header lookup in webhook verify | Revised after review |
@@ -120,12 +120,13 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 <!-- issues:start -->
 | Project | Issue | Status |
 | --- | --- | --- |
-| [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1832](https://github.com/Adyen/adyen-node-api-library/issues/1832) \[Bug\]: NexoCrypto.decrypt lets padding errors through and accepts a nonce of... | Open |
 | [gocardless/gocardless-pro-python](https://github.com/gocardless/gocardless-pro-python) | [#203](https://github.com/gocardless/gocardless-pro-python/issues/203) webhooks.parse accepts an empty webhook secret, and a missing Webhook-Signatu... | Open |
+| [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2928](https://github.com/stripe/stripe-node/issues/2928) constructEvent throws RangeError or a generic Error for a malformed v1 value... | Open |
+| [getsentry/sentry-python](https://github.com/getsentry/sentry-python) | [#8272](https://github.com/getsentry/sentry-python/issues/8272) EventScrubber's header entries in DEFAULT_DENYLIST never match request headers | Open |
+| [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1832](https://github.com/Adyen/adyen-node-api-library/issues/1832) \[Bug\]: NexoCrypto.decrypt lets padding errors through and accepts a nonce of... | Open |
 | [mercadopago/sdk-python](https://github.com/mercadopago/sdk-python) | [#160](https://github.com/mercadopago/sdk-python/issues/160) \[BUG\]: WebhookSignatureValidator.validate raises TypeError for a non-ASCII v1... | Open |
 | [mercadopago/sdk-python](https://github.com/mercadopago/sdk-python) | [#159](https://github.com/mercadopago/sdk-python/issues/159) \[BUG\]: tolerance_seconds rejects every Orders API notification (ts in millise... | Open |
 | [mercadopago/sdk-nodejs](https://github.com/mercadopago/sdk-nodejs) | [#492](https://github.com/mercadopago/sdk-nodejs/issues/492) \[BUG\]: toleranceSeconds rejects every Orders API notification (ts in millisec... | Open |
-| [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2928](https://github.com/stripe/stripe-node/issues/2928) constructEvent throws RangeError or a generic Error for a malformed v1 value... | Open |
 | [stripe/stripe-python](https://github.com/stripe/stripe-python) | [#1991](https://github.com/stripe/stripe-python/issues/1991) WebhookSignature.verify_header raises TypeError for a non-ASCII v1 signature | Open |
 | [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1442](https://github.com/modelcontextprotocol/rust-sdk/issues/1442) auth: tokens that live 30s or less are refreshed on every request | Open |
 | [golang/go](https://github.com/golang/go) | [#82658](https://github.com/golang/go/issues/82658) x/oauth2: DeviceAccessToken panics on a negative or very large interval | Fixed |
