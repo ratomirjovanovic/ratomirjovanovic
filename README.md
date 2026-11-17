@@ -36,7 +36,7 @@ Work in other projects that their maintainers merged or changed because of it.
 | **Razorpay** | Review of razorpay-node [#492](https://github.com/razorpay/razorpay-node/pull/492): network errors would have carried the API key secret into application logs; fixed in the PR with tests. |
 | **PayPal** | Review of paypal-js [#1100](https://github.com/paypal/paypal-js/pull/1100) on v6 script reuse across namespaces; adopted in the PR. |
 | **Standard Webhooks** | Fixed the PHP `Webhook::fromRaw()`, which always threw after the empty secret check was added ([#354](https://github.com/standard-webhooks/standard-webhooks/pull/354), merged). Also reviewed binary payload signing ([#348](https://github.com/standard-webhooks/standard-webhooks/pull/348)); merged with the `memoryview` fix the review asked for. |
-| **Model Context Protocol** | Review of the Go SDK client credentials flow ([#1451](https://github.com/modelcontextprotocol/go-sdk/pull/1451)); merged after revision. |
+| **Model Context Protocol** | Review of the Go SDK client credentials flow ([#1451](https://github.com/modelcontextprotocol/go-sdk/pull/1451)); merged after revision. Also reviewed the Rust SDK fix that stopped short-lived access tokens from being refreshed on every call ([#1450](https://github.com/modelcontextprotocol/rust-sdk/pull/1450)); merged. |
 
 ## Open source
 
