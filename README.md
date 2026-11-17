@@ -27,6 +27,8 @@ Work in other projects that their maintainers merged or changed because of it.
 | Project | What happened |
 | --- | --- |
 | **Adyen** | Reported that the Node HMAC validator accepted a malformed key as an empty one ([#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816)). Adyen confirmed it and asked for fixes across its SDKs: merged in [Node](https://github.com/Adyen/adyen-node-api-library/pull/1817), [Java](https://github.com/Adyen/adyen-java-api-library/pull/2100) and [.NET](https://github.com/Adyen/adyen-dotnet-api-library/pull/1899); PHP, Python, Go and Ruby in review. |
+| **Cloudflare circl** | Found that `hpke.UnmarshalSealer` and `UnmarshalOpener` accepted a serialized context with extra bytes appended. Fix and test merged ([#720](https://github.com/cloudflare/circl/pull/720)). |
+| **FastMCP** | Reported that `JWTVerifier` accepted a validly signed token whose `nbf` was still in the future ([#6511](https://github.com/PrefectHQ/fastmcp/issues/6511)). The maintainers fixed it within a day ([#6512](https://github.com/PrefectHQ/fastmcp/pull/6512)) and credited the report as co-author of the commit. |
 | **Svix** | Two PHP webhook fixes merged: empty or non-base64 secrets are rejected ([#2765](https://github.com/svix/svix-webhooks/pull/2765)) and `Webhook::fromRaw` works again ([#2768](https://github.com/svix/svix-webhooks/pull/2768)). |
 | **Go** | Reported that `oauth2.DeviceAccessToken` panics when a server returns a negative or very large polling interval ([golang/go#82658](https://github.com/golang/go/issues/82658)); fixed in golang.org/x/oauth2 ([CL 855541](https://go.dev/cl/855541)). |
 | **Google Gen AI SDK** | Review of go-genai [#1024](https://github.com/googleapis/go-genai/pull/1024): on Vertex AI the access token would still have followed a redirect to another domain, because the auth transport signs every hop again; the author adopted the fix in the PR. |
@@ -146,6 +148,7 @@ Fixes I wrote for other projects that their maintainers merged.
 
 | Project | Pull request | Merged |
 | --- | --- | --- |
+| [cloudflare/circl](https://github.com/cloudflare/circl) | [#720](https://github.com/cloudflare/circl/pull/720) hpke: reject trailing data when unmarshalling a sealer or opener | 2026-11-16 |
 | [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#354](https://github.com/standard-webhooks/standard-webhooks/pull/354) php: fix Webhook::fromRaw() after the empty secret check | 2026-11-13 |
 | [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1817](https://github.com/Adyen/adyen-node-api-library/pull/1817) fix(hmac): reject malformed HMAC keys and compare signatures exactly | 2026-11-03 |
 | [Adyen/adyen-dotnet-api-library](https://github.com/Adyen/adyen-dotnet-api-library) | [#1899](https://github.com/Adyen/adyen-dotnet-api-library/pull/1899) fix(hmac): reject an empty HMAC key | 2026-11-03 |
