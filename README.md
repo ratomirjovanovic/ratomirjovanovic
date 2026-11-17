@@ -122,12 +122,13 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 <!-- issues:start -->
 | Project | Issue | Status |
 | --- | --- | --- |
-| [gocardless/gocardless-pro-python](https://github.com/gocardless/gocardless-pro-python) | [#203](https://github.com/gocardless/gocardless-pro-python/issues/203) webhooks.parse accepts an empty webhook secret, and a missing Webhook-Signatu... | Open |
-| [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2928](https://github.com/stripe/stripe-node/issues/2928) constructEvent throws RangeError or a generic Error for a malformed v1 value... | Open |
 | [getsentry/sentry-python](https://github.com/getsentry/sentry-python) | [#8272](https://github.com/getsentry/sentry-python/issues/8272) EventScrubber's header entries in DEFAULT_DENYLIST never match request headers | Open |
+| [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp) | [#6511](https://github.com/PrefectHQ/fastmcp/issues/6511) JWTVerifier accepts a token whose nbf is in the future | Fixed |
+| [gocardless/gocardless-pro-python](https://github.com/gocardless/gocardless-pro-python) | [#203](https://github.com/gocardless/gocardless-pro-python/issues/203) webhooks.parse accepts an empty webhook secret, and a missing Webhook-Signatu... | Open |
+| [mercadopago/sdk-python](https://github.com/mercadopago/sdk-python) | [#159](https://github.com/mercadopago/sdk-python/issues/159) \[BUG\]: tolerance_seconds rejects every Orders API notification (ts in millise... | Open |
+| [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2928](https://github.com/stripe/stripe-node/issues/2928) constructEvent throws RangeError or a generic Error for a malformed v1 value... | Open |
 | [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1832](https://github.com/Adyen/adyen-node-api-library/issues/1832) \[Bug\]: NexoCrypto.decrypt lets padding errors through and accepts a nonce of... | Open |
 | [mercadopago/sdk-python](https://github.com/mercadopago/sdk-python) | [#160](https://github.com/mercadopago/sdk-python/issues/160) \[BUG\]: WebhookSignatureValidator.validate raises TypeError for a non-ASCII v1... | Open |
-| [mercadopago/sdk-python](https://github.com/mercadopago/sdk-python) | [#159](https://github.com/mercadopago/sdk-python/issues/159) \[BUG\]: tolerance_seconds rejects every Orders API notification (ts in millise... | Open |
 | [mercadopago/sdk-nodejs](https://github.com/mercadopago/sdk-nodejs) | [#492](https://github.com/mercadopago/sdk-nodejs/issues/492) \[BUG\]: toleranceSeconds rejects every Orders API notification (ts in millisec... | Open |
 | [stripe/stripe-python](https://github.com/stripe/stripe-python) | [#1991](https://github.com/stripe/stripe-python/issues/1991) WebhookSignature.verify_header raises TypeError for a non-ASCII v1 signature | Open |
 | [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1442](https://github.com/modelcontextprotocol/rust-sdk/issues/1442) auth: tokens that live 30s or less are refreshed on every request | Open |
