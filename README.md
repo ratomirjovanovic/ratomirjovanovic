@@ -97,17 +97,17 @@ Official client libraries for the [Payshen](https://www.payshen.com) payment orc
 Recent public reviews, mostly payment, webhook and security changes. The last column shows what GitHub recorded after the review: whether the author pushed changes, whether I approved, and whether the pull request was merged.
 
 <!-- reviews:start -->
-<sub>25 pull requests in 20 projects · 16 revised by their authors after the review · 9 merged</sub>
+<sub>25 pull requests in 20 projects · 16 revised by their authors after the review · 10 merged</sub>
 
 | Project | Pull request reviewed | Since the review |
 | --- | --- | --- |
+| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12049](https://github.com/better-auth/better-auth/pull/12049) fix(account): share and guard concurrent provider token refreshes | Closed |
+| [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1450](https://github.com/modelcontextprotocol/rust-sdk/pull/1450) fix(auth): avoid refreshing short-lived access tokens on every call | Merged after revision |
 | [mark3labs/mcp-go](https://github.com/mark3labs/mcp-go) | [#1123](https://github.com/mark3labs/mcp-go/pull/1123) fix(oauth): refresh an access token shortly before it expires | Revised, then approved |
-| [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1450](https://github.com/modelcontextprotocol/rust-sdk/pull/1450) fix(auth): avoid refreshing short-lived access tokens on every call | Revised, then approved |
 | [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | [#15106](https://github.com/juspay/hyperswitch/pull/15106) fix(connector): \[SANTANDER\] bypass webhook mTLS source verification | Closed |
 | [razorpay/razorpay-node](https://github.com/razorpay/razorpay-node) | [#492](https://github.com/razorpay/razorpay-node/pull/492) Preserve network errors when the API does not respond | Revised, then approved |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17489](https://github.com/medusajs/medusa/pull/17489) fix(payment): recompute refunded amount when a refund fails at the provider | Merged after revision |
 | [googleapis/go-genai](https://github.com/googleapis/go-genai) | [#1024](https://github.com/googleapis/go-genai/pull/1024) fix: strip the API key from a redirect to another domain | Revised, then approved |
-| [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12049](https://github.com/better-auth/better-auth/pull/12049) fix(account): share and guard concurrent provider token refreshes | Revised after review |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2732](https://github.com/svix/svix-webhooks/pull/2732) fix(php,ruby): fallback to case-insensitive header lookup in webhook verify | Revised after review |
 | [twilio/twilio-node](https://github.com/twilio/twilio-node) | [#1226](https://github.com/twilio/twilio-node/pull/1226) chore: support HMAC-SHA256 webhook signatures in validateRequest | Merged after revision |
 | [better-auth/better-auth](https://github.com/better-auth/better-auth) | [#12014](https://github.com/better-auth/better-auth/pull/12014) fix(stripe): refetch subscription in subscription webhooks | Closed |
@@ -122,7 +122,9 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 <!-- issues:start -->
 | Project | Issue | Status |
 | --- | --- | --- |
-| [getsentry/sentry-python](https://github.com/getsentry/sentry-python) | [#8272](https://github.com/getsentry/sentry-python/issues/8272) EventScrubber's header entries in DEFAULT_DENYLIST never match request headers | Open |
+| [getsentry/sentry-python](https://github.com/getsentry/sentry-python) | [#8272](https://github.com/getsentry/sentry-python/issues/8272) EventScrubber's header entries in DEFAULT_DENYLIST never match request headers | Fixed |
+| [payloadcms/payload](https://github.com/payloadcms/payload) | [#19055](https://github.com/payloadcms/payload/issues/19055) plugin-ecommerce: restore the Stripe cart drift check with a metadata digest,... | Open |
+| [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1442](https://github.com/modelcontextprotocol/rust-sdk/issues/1442) auth: tokens that live 30s or less are refreshed on every request | Fixed |
 | [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp) | [#6511](https://github.com/PrefectHQ/fastmcp/issues/6511) JWTVerifier accepts a token whose nbf is in the future | Fixed |
 | [gocardless/gocardless-pro-python](https://github.com/gocardless/gocardless-pro-python) | [#203](https://github.com/gocardless/gocardless-pro-python/issues/203) webhooks.parse accepts an empty webhook secret, and a missing Webhook-Signatu... | Open |
 | [mercadopago/sdk-python](https://github.com/mercadopago/sdk-python) | [#159](https://github.com/mercadopago/sdk-python/issues/159) \[BUG\]: tolerance_seconds rejects every Orders API notification (ts in millise... | Open |
@@ -131,12 +133,10 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 | [mercadopago/sdk-python](https://github.com/mercadopago/sdk-python) | [#160](https://github.com/mercadopago/sdk-python/issues/160) \[BUG\]: WebhookSignatureValidator.validate raises TypeError for a non-ASCII v1... | Open |
 | [mercadopago/sdk-nodejs](https://github.com/mercadopago/sdk-nodejs) | [#492](https://github.com/mercadopago/sdk-nodejs/issues/492) \[BUG\]: toleranceSeconds rejects every Orders API notification (ts in millisec... | Open |
 | [stripe/stripe-python](https://github.com/stripe/stripe-python) | [#1991](https://github.com/stripe/stripe-python/issues/1991) WebhookSignature.verify_header raises TypeError for a non-ASCII v1 signature | Open |
-| [modelcontextprotocol/rust-sdk](https://github.com/modelcontextprotocol/rust-sdk) | [#1442](https://github.com/modelcontextprotocol/rust-sdk/issues/1442) auth: tokens that live 30s or less are refreshed on every request | Open |
 | [golang/go](https://github.com/golang/go) | [#82658](https://github.com/golang/go/issues/82658) x/oauth2: DeviceAccessToken panics on a negative or very large interval | Fixed |
 | [go-pay/gopay](https://github.com/go-pay/gopay) | [#558](https://github.com/go-pay/gopay/issues/558) Is there a private way to report a security issue? | Open |
 | [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816) \[Bug\]: HmacValidator accepts a malformed HMAC key as an empty key | Fixed |
 | [cashfree/cashfree-pg-sdk-nodejs](https://github.com/cashfree/cashfree-pg-sdk-nodejs) | [#133](https://github.com/cashfree/cashfree-pg-sdk-nodejs/issues/133) PGVerifyWebhookSignature never checks x-webhook-timestamp, so an old webhook... | Open |
-| [payloadcms/payload](https://github.com/payloadcms/payload) | [#19055](https://github.com/payloadcms/payload/issues/19055) plugin-ecommerce: restore the Stripe cart drift check with a metadata digest,... | Open |
 | [getlago/lago](https://github.com/getlago/lago) | [#842](https://github.com/getlago/lago/issues/842) \[BUG\]: No private way to report a security issue on GitHub | Open |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2763](https://github.com/svix/svix-webhooks/issues/2763) php: Webhook accepts an empty or non-base64 secret and verifies with an empty... | Fixed |
 | [medusajs/medusa](https://github.com/medusajs/medusa) | [#17544](https://github.com/medusajs/medusa/issues/17544) \[Bug\]: Payment providers removed from config are never disabled in payment_pr... | Fixed |
