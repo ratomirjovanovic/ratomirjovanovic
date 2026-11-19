@@ -27,7 +27,9 @@ Work in other projects that their maintainers merged or changed because of it.
 
 | Project | What happened |
 | --- | --- |
-| **Adyen** | Reported that the Node HMAC validator accepted a malformed key as an empty one ([#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816)). Adyen confirmed it and asked for fixes across its SDKs: merged in [Node](https://github.com/Adyen/adyen-node-api-library/pull/1817), [Java](https://github.com/Adyen/adyen-java-api-library/pull/2100) and [.NET](https://github.com/Adyen/adyen-dotnet-api-library/pull/1899); PHP, Python, Go and Ruby in review. |
+| **Adyen** | Reported that the Node HMAC validator accepted a malformed key as an empty one ([#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816)). Adyen confirmed it and asked for fixes across its SDKs: all seven merged: [Node](https://github.com/Adyen/adyen-node-api-library/pull/1817), [Java](https://github.com/Adyen/adyen-java-api-library/pull/2100), [.NET](https://github.com/Adyen/adyen-dotnet-api-library/pull/1899), [Python](https://github.com/Adyen/adyen-python-api-library/pull/515), [Go](https://github.com/Adyen/adyen-go-api-library/pull/607), [PHP](https://github.com/Adyen/adyen-php-api-library/pull/976) and [Ruby](https://github.com/Adyen/adyen-ruby-api-library/pull/410). |
+| **Sentry** | Reported that the `EventScrubber` header entries in `DEFAULT_DENYLIST` never matched real request headers, which use hyphens ([#8272](https://github.com/getsentry/sentry-python/issues/8272)). Fix and tests merged ([#8305](https://github.com/getsentry/sentry-python/pull/8305)). |
+| **Blnk** | Hooks were signed with an empty HMAC key when `server.secret_key` was not set. Fix merged ([#436](https://github.com/blnkfinance/blnk/pull/436)). |
 | **Cloudflare circl** | Found that `hpke.UnmarshalSealer` and `UnmarshalOpener` accepted a serialized context with extra bytes appended. Fix and test merged ([#720](https://github.com/cloudflare/circl/pull/720)). |
 | **FastMCP** | Reported that `JWTVerifier` accepted a validly signed token whose `nbf` was still in the future ([#6511](https://github.com/PrefectHQ/fastmcp/issues/6511)). The maintainers fixed it within a day ([#6512](https://github.com/PrefectHQ/fastmcp/pull/6512)) and credited the report as co-author of the commit. |
 | **Svix** | Two PHP webhook fixes merged: empty or non-base64 secrets are rejected ([#2765](https://github.com/svix/svix-webhooks/pull/2765)) and `Webhook::fromRaw` works again ([#2768](https://github.com/svix/svix-webhooks/pull/2768)). |
@@ -150,6 +152,12 @@ Fixes I wrote for other projects that their maintainers merged.
 
 | Project | Pull request | Merged |
 | --- | --- | --- |
+| [getsentry/sentry-python](https://github.com/getsentry/sentry-python) | [#8305](https://github.com/getsentry/sentry-python/pull/8305) fix(scrubber): Match hyphenated header keys against the denylist | 2026-11-18 |
+| [blnkfinance/blnk](https://github.com/blnkfinance/blnk) | [#436](https://github.com/blnkfinance/blnk/pull/436) fix(hooks): send hooks unsigned when server.secret_key is not set | 2026-11-18 |
+| [Adyen/adyen-php-api-library](https://github.com/Adyen/adyen-php-api-library) | [#976](https://github.com/Adyen/adyen-php-api-library/pull/976) fix(hmac): don't include the HMAC key in exception messages | 2026-11-17 |
+| [Adyen/adyen-go-api-library](https://github.com/Adyen/adyen-go-api-library) | [#607](https://github.com/Adyen/adyen-go-api-library/pull/607) fix(hmacvalidator): reject an empty HMAC key | 2026-11-17 |
+| [Adyen/adyen-python-api-library](https://github.com/Adyen/adyen-python-api-library) | [#515](https://github.com/Adyen/adyen-python-api-library/pull/515) fix(util): reject an empty HMAC key | 2026-11-17 |
+| [Adyen/adyen-ruby-api-library](https://github.com/Adyen/adyen-ruby-api-library) | [#410](https://github.com/Adyen/adyen-ruby-api-library/pull/410) fix(hmac): reject an empty HMAC key | 2026-11-17 |
 | [cloudflare/circl](https://github.com/cloudflare/circl) | [#720](https://github.com/cloudflare/circl/pull/720) hpke: reject trailing data when unmarshalling a sealer or opener | 2026-11-16 |
 | [standard-webhooks/standard-webhooks](https://github.com/standard-webhooks/standard-webhooks) | [#354](https://github.com/standard-webhooks/standard-webhooks/pull/354) php: fix Webhook::fromRaw() after the empty secret check | 2026-11-13 |
 | [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1817](https://github.com/Adyen/adyen-node-api-library/pull/1817) fix(hmac): reject malformed HMAC keys and compare signatures exactly | 2026-11-03 |
@@ -158,7 +166,7 @@ Fixes I wrote for other projects that their maintainers merged.
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2768](https://github.com/svix/svix-webhooks/pull/2768) php: fix Webhook::fromRaw | 2026-10-30 |
 | [svix/svix-webhooks](https://github.com/svix/svix-webhooks) | [#2765](https://github.com/svix/svix-webhooks/pull/2765) php: reject an empty or non-base64 webhook secret | 2026-10-29 |
 
-<sub>The Adyen fixes follow [#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816), an HMAC validation issue I reported and Adyen confirmed. Related fixes for the PHP, Python, Go and Ruby libraries are in review.</sub>
+<sub>The Adyen fixes follow [#1816](https://github.com/Adyen/adyen-node-api-library/issues/1816), an HMAC validation issue I reported and Adyen confirmed. Related fixes for the PHP, Python, Go and Ruby libraries are merged too.</sub>
 
 ## Project facts
 
