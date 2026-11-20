@@ -125,6 +125,7 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 <!-- issues:start -->
 | Project | Issue | Status |
 | --- | --- | --- |
+| [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2928](https://github.com/stripe/stripe-node/issues/2928) constructEvent throws RangeError or a generic Error for a malformed v1 value... | Open |
 | [slackapi/python-slack-sdk](https://github.com/slackapi/python-slack-sdk) | [#2067](https://github.com/slackapi/python-slack-sdk/issues/2067) SignatureVerifier.is_valid raises instead of returning False for a malformed... | Open |
 | [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1832](https://github.com/Adyen/adyen-node-api-library/issues/1832) \[Bug\]: NexoCrypto.decrypt lets padding errors through and accepts a nonce of... | Open |
 | [mercadopago/sdk-python](https://github.com/mercadopago/sdk-python) | [#160](https://github.com/mercadopago/sdk-python/issues/160) \[BUG\]: WebhookSignatureValidator.validate raises TypeError for a non-ASCII v1... | Open |
@@ -134,7 +135,6 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 | [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp) | [#6511](https://github.com/PrefectHQ/fastmcp/issues/6511) JWTVerifier accepts a token whose nbf is in the future | Fixed |
 | [gocardless/gocardless-pro-python](https://github.com/gocardless/gocardless-pro-python) | [#203](https://github.com/gocardless/gocardless-pro-python/issues/203) webhooks.parse accepts an empty webhook secret, and a missing Webhook-Signatu... | Open |
 | [mercadopago/sdk-python](https://github.com/mercadopago/sdk-python) | [#159](https://github.com/mercadopago/sdk-python/issues/159) \[BUG\]: tolerance_seconds rejects every Orders API notification (ts in millise... | Open |
-| [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2928](https://github.com/stripe/stripe-node/issues/2928) constructEvent throws RangeError or a generic Error for a malformed v1 value... | Open |
 | [mercadopago/sdk-nodejs](https://github.com/mercadopago/sdk-nodejs) | [#492](https://github.com/mercadopago/sdk-nodejs/issues/492) \[BUG\]: toleranceSeconds rejects every Orders API notification (ts in millisec... | Open |
 | [stripe/stripe-python](https://github.com/stripe/stripe-python) | [#1991](https://github.com/stripe/stripe-python/issues/1991) WebhookSignature.verify_header raises TypeError for a non-ASCII v1 signature | Open |
 | [golang/go](https://github.com/golang/go) | [#82658](https://github.com/golang/go/issues/82658) x/oauth2: DeviceAccessToken panics on a negative or very large interval | Fixed |
