@@ -58,6 +58,7 @@ Application security assessment for your own repositories that also tells you wh
 - **Evidence, not opinions:** each finding links to a redacted, SHA-256 addressed evidence record and is fingerprinted across runs, so a fix counts only when the check runs again.
 - **No AI-confirmed findings:** review agents can only record hypotheses, and the engine reads and redacts the cited lines itself.
 - **Wide static coverage:** secrets, injection sinks, CI/CD, containers, Terraform, Android and iOS manifests, webhooks, MCP and LLM output reaching exec sinks.
+- **Built-in data flow analysis:** JavaScript, TypeScript, Python, Java and Go (PHP experimental), measured on public benchmarks and on two independent sets the engines never saw, with the misses published next to the hits.
 - **Reports and CI:** HTML, Markdown, JSON, SARIF 2.1.0 and CSV, with a `--fail-on` gate. Release binaries are reproducible, with checksums, an SBOM and signed provenance.
 
 ```text
