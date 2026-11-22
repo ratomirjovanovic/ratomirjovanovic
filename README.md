@@ -126,6 +126,7 @@ Problems I found while integrating or reviewing other projects, reported upstrea
 <!-- issues:start -->
 | Project | Issue | Status |
 | --- | --- | --- |
+| [ccfos/nightingale](https://github.com/ccfos/nightingale) | [#3500](https://github.com/ccfos/nightingale/issues/3500) LDAP: allow verifying the server certificate (TLS and StartTLS currently skip... | Open |
 | [slackapi/python-slack-sdk](https://github.com/slackapi/python-slack-sdk) | [#2067](https://github.com/slackapi/python-slack-sdk/issues/2067) SignatureVerifier.is_valid raises instead of returning False for a malformed... | Open |
 | [stripe/stripe-node](https://github.com/stripe/stripe-node) | [#2928](https://github.com/stripe/stripe-node/issues/2928) constructEvent throws RangeError or a generic Error for a malformed v1 value... | Open |
 | [Adyen/adyen-node-api-library](https://github.com/Adyen/adyen-node-api-library) | [#1832](https://github.com/Adyen/adyen-node-api-library/issues/1832) \[Bug\]: NexoCrypto.decrypt lets padding errors through and accepts a nonce of... | Open |
